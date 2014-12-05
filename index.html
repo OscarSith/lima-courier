@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Lima Courier</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+	<div class="menu">
+		<div class="container clearfix">
+
+			<div id="logo" class="grid_3">
+				<ul class="navigation">
+                <li data-slide="1"><img src="img/logo_lima_curier.jpg" border="0"></li></ul>
+			</div>
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<li data-slide="2">QUIERO ENVIAR O RECOGER</li>
+					<li data-slide="4">QUIÉNES SOMOS</li>
+					<li data-slide="5">PARA MENSAJEROS </li>
+					<li data-slide="6">SERVICIOS </li>
+                    <li data-slide="7">CONTÁCTENOS</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div class="container clearfix bg-white">
+			<div id="botonBajar" align="center">
+				<a href="#" class="button" data-slide="2"><img src="img/downbt.png"></a>
+			</div>
+			<img src="img/hm_bg.jpg">
+			<p style="font-size:13px;" class="content">¿Debes entregar un documento, paquete, regalo y no tienes tiempo o no quieres gastar mucho dinero?<br>Lima Curier lo hace por ti.</p>
+			<ul class="navigate">
+				<li data-slide="3">
+					<a href="#" class="button" data-slide="3">
+						<i class="fa fa-credit-card fa-3x"></i>
+					</a>
+				</li>
+				<li data-slide="2">
+					<a href="#" class="button" data-slide="2">
+						<i class="fa fa-file-text fa-3x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="content grid_12" style="background-color: #e9eff2">
+				<img src="img/form.png" class="mb20" alt="Quiero enviar a recojer">
+				<a href="#" class="button btn-down" data-slide="3">
+					<img src="img/downbt.png">
+				</a>
+				<span>
+					<i class="fa fa-dropbox fa-4x"></i>
+					<small class="block">¿DONDE LOS RECOJO?</small>
+				</span>
+				<script type="text/javascript">
+					<!--
+					function isEmailAddr(email)
+					{
+					  var result = false;
+					  var theStr = new String(email);
+					  var index = theStr.indexOf("@");
+					  if (index > 0)
+					  {
+						var pindex = theStr.indexOf(".",index);
+						if ((pindex > index+1) && (theStr.length > pindex+1))
+						result = true;
+					  }
+					  return result;
+					}
+					
+					function validRequired(formField,fieldLabel)
+					{
+						var result = true;
+						
+						if (formField.value == "")
+						{
+							alert('Por favor llene el campo "' + fieldLabel +'" ');
+							formField.focus();
+							result = false;
+						}
+						
+						return result;
+					}
+					
+					function allDigits(str)
+					{
+						return inValidCharSet(str,"0123456789");
+					}
+					
+					function inValidCharSet(str,charset)
+					{
+						var result = true;
+					
+						// Note: doesn't use regular expressions to avoid early Mac browser bugs	
+						for (var i=0;i<str.length;i++)
+							if (charset.indexOf(str.substr(i,1))<0)
+							{
+								result = false;
+								break;
+							}
+						
+						return result;
+					}
+					
+					function validEmail(formField,fieldLabel,required)
+					{
+						var result = true;
+						
+						if (required && !validRequired(formField,fieldLabel))
+							result = false;
+					
+						if (result && ((formField.value.length < 3) || !isEmailAddr(formField.value)) )
+						{
+							alert("Por favor, ingrese una dirección de e-mail válida.");
+							formField.focus();
+							result = false;
+						}
+					   
+					  return result;
+					
+					}
+					
+					function validNum(formField,fieldLabel,required)
+					{
+						var result = true;
+					
+						if (required && !validRequired(formField,fieldLabel))
+							result = false;
+					  
+						if (result)
+						{
+							if (!allDigits(formField.value))
+							{
+								alert('Ingrese un número válido en el campo "' + fieldLabel +'" .');
+								formField.focus();		
+								result = false;
+							}
+						} 
+						
+						return result;
+					}
+					
+					function validateForm(theForm)
+					{
+						// personalizando para el form
+					
+						// Inicio ------->
+						if (!validRequired(theForm.rname,"Nombre"))
+							return false;
+							
+						if (!validRequired(theForm.raddress,"Dirección"))
+							return false;
+						
+						if (!validRequired(theForm.rdist,"Distrito"))
+							return false;
+							
+						if (!validNum(theForm.rtelf,"Teléfono"))
+							return false;
+						
+						if (!validEmail(theForm.email,"E-mail",true))
+							return false;
+						
+						if (!validRequired(theForm.rdesc,"Descripción"))
+							return false;
+						
+						if (!validRequired(theForm.entname,"Nombre de entrega"))
+							return false;
+							
+						if (!validRequired(theForm.entdir,"Dirección de entrega"))
+							return false;
+						
+						if (!validRequired(theForm.entdist,"Distrito de entrega"))
+							return false;
+							
+						if (!validNum(theForm.entphone,"Teléfono de entrega"))
+							return false;
+					
+						// <--------- Final
+						
+						return true;
+					}
+					//-->
+					</script>
+				<div id="contactResponse" style="color:#333;">
+					<p>&nbsp;</p>
+				</div>
+				<form id="contactForm" action="sendcont.php" method="POST" onsubmit="return validateForm(this)">
+       		   <table width="70%" border="0" align="center" cellpadding="0" cellspacing="0" id="tabla1">
+                  <tr>
+                    <td width="200">NOMBRE</td>
+                    <td width="600"><input name="rname" type="text" id="textfield5"></td>
+                  </tr>
+                  <tr>
+                    <td>DIRECCIÓN<br></td>
+                    <td><input name="raddress" type="text" id="textfield6"></td>
+                  </tr>
+                  <tr>
+                    <td>DISTRITO</td>
+                    <td><input name="rdist" type="text" id="textfield7"></td>
+                  </tr>
+                  <tr>
+                    <td>TELÉFONO</td>
+                    <td><input name="rtelf" type="text" id="textfield8"></td>
+                  </tr>
+                  <tr>
+                    <td>EMAIL</td>
+                    <td><input name="email" type="text" id="textfield9"></td>
+                  </tr>
+                  <tr>
+                    <td valign="top">DESCRIPCIÓN</td>
+                    <td><label for="textarea"></label>
+                    <textarea name="rdesc" rows="4" id="textarea"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                  <input type="checkbox" class="radio" value="si" name="recojo" />PAGAR EN EL PUNTO DE RECOJO</td>
+                  </tr>
+                </table>
+                 <span>
+                 	<i class="fa fa-truck fa-4x"></i>
+                 	<small class="block">¿DONDE LO ENTREGO?</small>
+                 </span>
+                 <table width="70%" border="0" align="center" cellpadding="0" cellspacing="0" id="tabla2">
+                   <tr>
+                     <td width="200">NOMBRE</td>
+                     <td width="600"><label for="textfield"></label>
+                     <input name="entname" type="text" id="textfield"></td>
+                   </tr>
+                   <tr>
+                     <td>DIRECCIÓN</td>
+                     <td><input name="entdir" type="text" id="textfield2"></td>
+                   </tr>
+                   <tr>
+                     <td>DISTRITO</td>
+                     <td><input name="entdist" type="text" id="textfield3"></td>
+                   </tr>
+                   <tr>
+                     <td>TELÉFONO </td>
+                     <td><input name="entphone" type="text" id="textfield4"></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" align="left"><input type="checkbox" class="radio" value="si" name="entrega" />
+                     PAGAR EN EL PUNTO DE ENTREGA</td>
+                   </tr>
+                 </table>
+                	<input name="submit" type="image" id="Submit" alt="Submit Form" />
+					<p style="color:#58585b; font-size:11px">
+						En pocos minutos estaremos en contacto contigo para confirmar el pedido o solicitar más información.
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="content grid_12" style="background-color: #e9eff2">
+				<img src="img/tarifario_.png">
+				<a href="#" class="button btn-down" data-slide="3">
+					<img src="img/downbt.png">
+				</a>
+				<span>
+					<i class="fa fa-truck fa-4x"></i>
+					<small class="block">¿DONDE LO ENTREGO?</small>
+				</span>
+                <table width="40%" border="0" align="center" cellpadding="0" cellspacing="0" id="tabla3">
+                  <tr>
+                    <td>ENTREGAS EN EL MISMO DISTRITO : </td>
+                    <td>S/.10</td>
+                  </tr>
+                  <tr>
+                    <td>ENTREGAS ENTRE DISTRITOS: </td>
+                    <td>S/.15</td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                <span>
+					<i class="fa fa-map-marker fa-4x"></i>
+					<small class="block">¿DONDE LO ENTREGO?</small>
+				</span>
+                <p>&nbsp;</p>
+                <table width="46%" border="0" align="center" cellpadding="0" cellspacing="0" id="tabla4">
+                  <tr>
+                    <td width="40%">SAN ISIDRO</td>
+                    <td width="34%">SAN BORJA</td>
+                    <td width="26%">BREÑA</td>
+                  </tr>
+                  <tr>
+                    <td>MIRAFLORES </td>
+                    <td>SURCO</td>
+                    <td>PUEBLO LIBRE</td>
+                  </tr>
+                  <tr>
+                    <td>CHORRILLOS</td>
+                    <td>LA MOLINA</td>
+                    <td>LA VICTORIA</td>
+                  </tr>
+                  <tr>
+                    <td>BARRANCO </td>
+                    <td>LINCE</td>
+                    <td>SAN LUIS</td>
+                  </tr>
+                  <tr>
+                    <td>MAGDALENA DEL MAR</td>
+                    <td>JESUS MARÍA</td>
+                    <td>SURQUILLO</td>
+                  </tr>
+                  <tr>
+                    <td>SAN MIGUEL</td>
+                    <td>CERCADO DE LIMA</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="content grid_12 bg-white">
+            	<img src="img/qui_bg.jpg">
+            	<a href="#" class="button btn-down" data-slide="3">
+					<img src="img/downbt.png">
+				</a>
+				<p style="font-size: 14px;">Lima Curier es un servicio de entrega económico, rápido y eficaz,<br>que garantiza el envío urgente, desde y hacia Lima, durante el mismo día.
+				</p>
+          		<ul class="navigate clearfix pb20">
+					<li data-slide="3">
+						<a href="#" class="button" data-slide="3">
+							<i class="fa fa-credit-card fa-3x"></i>
+						</a>
+					</li>
+					<li data-slide="2">
+						<a href="#" class="button" data-slide="2">
+							<i class="fa fa-file-text fa-3x"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+    <div class="slide" style="padding-top:55px; background-image:url(img/bgfix.gif) repeat-y;" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="content grid_12 bg-gray-light pb20">
+            	<img src="img/tra_bg.jpg">
+            	<a href="#" class="button btn-down" data-slide="3">
+					<img src="img/downbt.png">
+				</a>
+				<p style="font-size:14px">&nbsp;</p>
+				<p style="font-size:14px">Encuentra interesantes posibilidades de desarrollo profesional.</p>
+          		<span>
+					<i class="fa fa-bicycle fa-4x"></i>
+					<small class="block">¿DONDE LOS RECOJO?</small>
+				</span>
+			</div>
+		</div>
+	</div>
+    
+    <div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+		<div class="container clearfix bg-white">
+			<div class="content grid_12" >
+				<img src="img/cont_bg.jpg">
+				<p>&nbsp;</p>
+				<table width="70%" border="0" align="center" cellpadding="0" cellspacing="0" id="tabla5">
+              <tr>
+                <td>
+                	<span>
+						<i class="fa fa-map-marker fa-4x"></i>
+						<small class="block">¿DONDE LOS RECOJO?</small>
+					</span>
+                </td>
+                <td rowspan="2"><img src="img/divider.png" width="3" height="70"></td>
+                <td>
+                	<span>
+						<i class="fa fa-phone-square fa-4x"></i>
+						<small class="block">¿DONDE LOS RECOJO?</small>
+					</span>
+                </td>
+                <td rowspan="2"><img src="img/divider.png" width="3" height="70"></td>
+                <td>
+                	<span>
+						<i class="fa fa-send fa-4x"></i>
+						<small class="block">¿DONDE LOS RECOJO?</small>
+					</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Diego Ferré 387, Of. B, <br>
+                Miraflores</td>
+                <td>973848624</td>
+                <td>info@isend.pe</td>
+              </tr>
+              </table>
+				<footer>
+					<small><i class="fa fa-copyright fa-lg"></i> COPYRIGHT 2014 ISEND, ALL RIGHTS RESERVED</small>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
