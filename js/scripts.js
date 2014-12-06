@@ -1,13 +1,16 @@
 jQuery(document).ready(function ($) {
 
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
 
-    $(window).stellar();
+    // $(window).stellar();
 
-    var links = $('.navigation').find('li');
-    slide = $('.slide');
-    button = $('.button');
-    mywindow = $(window);
-    htmlbody = $('html,body');
+    var links = $('.navbar-nav li a, .navbar-brand'),
+        slide = $('.slide'),
+        button = $('.button'),
+        mywindow = $(window),
+        htmlbody = $('html,body');
 
 
     slide.waypoint(function (event, direction) {
