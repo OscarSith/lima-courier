@@ -34,8 +34,8 @@ img {
 	position: relative;
 	width:100%;
 }
-.h50{
-	height: 50px
+.h56{
+	height: 56px
 }
 .navbar-default .navbar-nav>li>a{
 	font-size: .7em;
@@ -126,112 +126,19 @@ img {
 	right: 0;
 	left: 0
 }
-
-/* Slide 3 */ 
-#slide3 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	line-height: 0px;
-	color:#8a8683;
-	font-weight: 700;
-}
-#slide3 h2 {
-	font-size: 2em;
-	color: #8a8683;
-	line-height: 0px;
-	padding-bottom:20px;
-	font-weight: 400;
+.mt60 {
+	margin-top: 60px
 }
 
-#slide4 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	line-height: 0px;
-	color:#ffffff;
-	font-weight: 700;
-}
-#slide4 h2 {
-	font-size: 2em;
-	color: #ffffff;
-	line-height: 0px;
-	padding-bottom:20px;
-	font-weight: 400;
-}
-
-#tabla1{
-	font-size: 12px;
-	color: #58585b;
-	text-align: left;
-}
-.content form #tabla1 input {
-	font-size: 13px;
-	color: #58595B;
-	background-color: #E9EFF2;
-	border: 1px solid #58585b;
-	padding: 2px;
-	width: 80%;
-}
-
-.content form #tabla1 tr td #textarea {
-	font-size: 13px;
-	color: #58595B;
-	background-color: #E9EFF2;
-	border: 1px solid #58585b;
-	padding: 2px;
-	width: 70%;
-}
-.content #contactForm #tabla1 tr td .radio {
-	width: 20px;
-}
-.content form #tabla1 tr td #recojo {
-	width: auto;
-}
-
-.content form #tabla1 tr td {
-	padding: 3px;
-}
-
-#tabla2 {
-	font-size: 12px;
-	color: #58585b;
-	text-align: left;
-}
-.content form #tabla2 tr td input {
-	font-size: 13px;
-	color: #58595B;
-	background-color: #E9EFF2;
-	border: 1px solid #58585b;
-	padding: 2px;
-	width: 80%;
-}
-.content #contactForm #tabla2 tr td .radio {
-	width: 20px;
-}
-
-/*#tabla2 tr td #entrega {
-	width: auto;
-}*/
-#tabla2 td {
-	padding: 3px;
-}
-#tabla5 td {
-	color: #58595B;
-	padding: 4px;
-	font-size: 14px;
-}
-#slide1 .container.clearfix ul{
+.container.clearfix ul{
 	width: 256px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 0;
 	overflow: hidden;
 }
-#slide4 .container.clearfix ul{
-	display: block;
-	text-align: center;
-	width: 250px;
-	margin-right: auto;
-	margin-left: auto;
+#tabla5 {
+	width:70%
 }
 
 @media (min-width: 1200px) {
@@ -245,179 +152,16 @@ img {
 	}
 }
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-
-	#nav {
-		width:100%;
-		text-align:center;
-		margin:10px 0;
-	}
-
-	.navigation{
-		width: 100%;
-		float: center;
-		list-style: none;
-		margin: 0;
-		padding:0;
-		font-size: 0.7em;
-	}
-
-	.navigation li{
-		width:20%;
-		padding:0;
-	}
-
-	.navigate{
-		width: 100%;
-		float: center;
-		list-style: none;
-		margin: 0;
-		padding:0;
-	}
-
-	.navigate li{
-		float: left;
-		width:85px;
-		padding:0;
-	}
-
-	.slide{
-		background-attachment: fixed;
-		width: 100%;
-		position: relative;
-	}
-
-	#decorative {
-		display:none;
-	}
-
-	#slide1 h1, #slide1 h2, 
-	#slide2 h1, #slide2 h2,
-	#slide3 h1, #slide3 h2,
-	#slide4 h1, #slide4 h2 {
-		line-height: 1em;
-	}
-}
-
 /* Mobile */
 @media screen and (max-width: 480px) {
 
-	#nav {
-		width:100%;
-		margin:5px 0;
-	}
-	.navigation{
-		width: 100%;
-		float: left;
-		list-style: none;
-		margin: 0;
-		padding:0;
-		font-size: 0.7em;
-	}
-	.navigation li{
-		float: left;
-		width:25%;
-	}
 	.slide{
 		background-attachment: fixed;
 		width:100%;
 		position: relative;
 	}
-	#slide1 h1 {
-		line-height: 1em;
-	}
-	#slide1 h2 {
-		line-height: 1em;
-	}
-	#slide2 h1 {
-		line-height: 1em;
-	}
-	#slide2 h2 {
-		line-height: 1em;
-	}
-	#slide3 h1 {
-		line-height: 1em;
-	}
-	#slide3 h2 {
-		line-height: 1em;
-	}
-	#slide4 h1 {
-		line-height: 1em;
-	}
-	#slide4 h2 {
-		line-height: 1em;
-	}
-	#slide5 h2 {
-		line-height: 1em;
-	}
-	#slide6 h2 {
-		line-height: 1em;
-	}
-	#tabla1 {
-		font-size: 0.7em;
-		color: #58585b;
-		text-align: left;
-	}
-	.content form #tabla1 tr td input {
-		font-size: 0.7em;
-		color: #58595B;
-		background-color: #E9EFF2;
-		border: 1px solid #58585b;
-		padding: 2px;
-		width: 100%;
-	}
-	.content form #tabla1 tr td #textarea {
-		font-size: 0.7em;
-		color: #58595B;
-		background-color: #E9EFF2;
-		border: 1px solid #58585b;
-		padding: 2px;
-		width: 80%;
-	}
-	.content form #tabla1 tr td #recojo {
-		width: auto;
-	}
-
-	.content form #tabla1 tr td {
-		padding: 3px;
-	}
-
-	#tabla2 {
-		font-size: 0.7em;
-		color: #58585b;
-		text-align: left;
-	}
-	.content form #tabla2 tr td input {
-		font-size: 0.7em;
-		color: #58595B;
-		background-color: #E9EFF2;
-		border: 1px solid #58585b;
-		padding: 2px;
-		width: 100%;
-	}
-
-	.content form #tabla2 tr td {
-		padding: 3px;
-	}
-	.content form #tabla2 tr td #entrega {
-		width: auto;
-	}
-	#slide1 .container.clearfix ul  {
-		display: block;
-		text-align: center;
-		width: 250px;
-		height: 86px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	#slide4 .container.clearfix ul  {
-		display: block;
-		text-align: center;
-		width: 250px;
-		height: 86px;
-		margin-right: auto;
-		margin-left: auto;
+	#tabla5 {
+		width: 100%
 	}
 }
 
