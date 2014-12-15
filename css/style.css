@@ -62,7 +62,9 @@ img {
 .navigate li:hover{
 	cursor:pointer;
 }
-
+#logo {
+		width: 110px;
+	}
 #botonBajar {
 	width: 100%;
 	z-index: 2;
@@ -167,8 +169,8 @@ img {
 
 @media screen and (max-width: 767px) {
 	#logo {
-		height: 48px;
 		margin-left: 15px;
+		width: 80px;
 	}
 }
 
