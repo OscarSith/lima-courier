@@ -4,7 +4,9 @@ jQuery(document).ready(function ($) {
         $('.navbar-toggle:visible').click();
     });
 
-    // $(window).stellar();
+    $('body').scrollspy({
+        target: '.navbar-fixed-top'
+    });
 
     var links = $('.navbar-nav li a, .navbar-brand'),
         slide = $('.slide'),

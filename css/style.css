@@ -17,6 +17,9 @@ img {
 .block {
 	display: block;
 }
+.page-scroll {
+	font-weight: bold;
+}
 .mb20{
 	margin-bottom: 20px
 }
