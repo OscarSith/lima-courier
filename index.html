@@ -36,15 +36,15 @@
                     	<a class="page-scroll" href="#slide2" data-slide="2">QUIERO ENVIAR O RECOGER</a>
                     </li>
 					<li>
-						<a class="page-scroll" href="#slide3" data-slide="5">PARA MENSAJEROS </a>
-					</li>
-					<li>
 						<a class="page-scroll" href="#slide4" data-slide="4">QUIÉNES SOMOS</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#" data-slide="6">SERVICIOS </a>
+						<a class="page-scroll" href="#slide5" data-slide="5">PARA MENSAJEROS </a>
 					</li>
-                    <li>
+					<li>
+						<a class="page-scroll" href="#slide6" data-slide="6">SERVICIOS </a>
+					</li>
+                    <li class="active">
                     	<a class="page-scroll" href="#slide7" data-slide="7">CONTÁCTENOS</a>
                     </li>
                 </ul>
@@ -83,13 +83,15 @@
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
 			<div class="content grid_12 bg-gray-light">
-				<img src="img/form.png" class="mb20" alt="Quiero enviar a recojer">
+				<div class="mb20 middle-panel">
+					<p>Quiero enviar ó recojer</p>
+					<i class="fa fa-truck fa-3x black"></i>
+				</div>
 				<span>
 					<i class="fa fa-dropbox fa-4x"></i>
 					<small class="block">¿DONDE LOS RECOJO?</small>
 				</span>
 				<script type="text/javascript">
-					<!--
 					function isEmailAddr(email)
 					{
 					  var result = false;
@@ -117,16 +119,15 @@
 						
 						return result;
 					}
-					
+
 					function allDigits(str)
 					{
 						return inValidCharSet(str,"0123456789");
 					}
-					
+
 					function inValidCharSet(str,charset)
 					{
 						var result = true;
-					
 						// Note: doesn't use regular expressions to avoid early Mac browser bugs	
 						for (var i=0;i<str.length;i++)
 							if (charset.indexOf(str.substr(i,1))<0)
@@ -134,52 +135,43 @@
 								result = false;
 								break;
 							}
-						
 						return result;
 					}
 					
 					function validEmail(formField,fieldLabel,required)
 					{
 						var result = true;
-						
 						if (required && !validRequired(formField,fieldLabel))
 							result = false;
-					
+
 						if (result && ((formField.value.length < 3) || !isEmailAddr(formField.value)) )
 						{
 							alert("Por favor, ingrese una dirección de e-mail válida.");
 							formField.focus();
 							result = false;
 						}
-					   
-					  return result;
-					
+						return result;
 					}
-					
+
 					function validNum(formField,fieldLabel,required)
 					{
 						var result = true;
-					
 						if (required && !validRequired(formField,fieldLabel))
 							result = false;
-					  
 						if (result)
 						{
 							if (!allDigits(formField.value))
 							{
 								alert('Ingrese un número válido en el campo "' + fieldLabel +'" .');
-								formField.focus();		
+								formField.focus();
 								result = false;
 							}
-						} 
-						
+						}
 						return result;
 					}
-					
+
 					function validateForm(theForm)
 					{
-						// personalizando para el form
-					
 						// Inicio ------->
 						if (!validRequired(theForm.rname,"Nombre"))
 							return false;
@@ -210,9 +202,6 @@
 							
 						if (!validNum(theForm.entphone,"Teléfono de entrega"))
 							return false;
-					
-						// <--------- Final
-						
 						return true;
 					}
 					//-->
@@ -224,29 +213,45 @@
 					<form id="contactForm" action="#" method="post" onsubmit="return validateForm(this)">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" required>
 							</div>
 							<div class="form-group">
-								<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico">
+								<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección">
+								<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
 							</div>
 							<div class="row">
 								<div class="col-xs-7">
 									<div class="form-group">
-										<input type="text" class="form-control" id="distrito" name="distrito" placeholder="Distrito">
+										<select name="distrito" id="distrito" class="form-control">
+											<option value="SAN ISIDRO">SAN ISIDRO</option>
+											<option value="SAN BORJA">SAN BORJA</option>
+											<option value="BREÑA">BREÑA</option>
+											<option value="MIRAFLORES">MIRAFLORES</option>
+											<option value="SURCO">SURCO</option>
+											<option value="PUEBLO LIBRE">PUEBLO LIBRE</option>
+											<option value="SAN MIQGUEL">SAN MIQGUEL</option>
+											<option value="CERCADO DE LIMA">CERCADO DE LIMA</option>
+											<option value="LA VICTORIA">LA VICTORIA</option>
+											<option value="BARRANCO">BARRANCO</option>
+											<option value="LINCE">LINCE</option>
+											<option value="SAN LUIS">SAN LUIS</option>
+											<option value="MAGDALENA DEL MAR">MAGDALENA DEL MAR</option>
+											<option value="JESÚS MARIA">JESÚS MARIA</option>
+											<option value="SURQUILLO">SURQUILLO</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-xs-5">
 									<div class="form-group">
-										<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+										<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
 									</div>
 								</div>
 							</div>
 							<div class="form-group text-left">
 								<label>
-									<input type="checkbox" value="si" name="recojo">
+									<input type="checkbox" value="si" name="recojo" id="recojo">
 									<small>Pagar en el punto de recojo</small>
 								</label>
 							</div>
@@ -266,26 +271,42 @@
 						<div class="col-sm-3 hidden-sm"></div>
 						<div class="col-xs-12 col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name_deliver" name="name_deliver" placeholder="Nombre y apellido completo">
+								<input type="text" class="form-control" id="name_deliver" name="name_deliver" placeholder="Nombre y apellido completo" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="direccion_deliver" name="direccion_deliver" placeholder="Dirección">
+								<input type="text" class="form-control" id="direccion_deliver" name="direccion_deliver" placeholder="Dirección" required>
 							</div>
 							<div class="row">
 								<div class="col-xs-7">
 									<div class="form-group">
-										<input type="text" class="form-control" id="distrito_deliver" name="distrito_deliver" placeholder="Distrito">
+										<select name="distrito_deliver" id="distrito_deliver" class="form-control">
+											<option value="SAN ISIDRO">SAN ISIDRO</option>
+											<option value="SAN BORJA">SAN BORJA</option>
+											<option value="BREÑA">BREÑA</option>
+											<option value="MIRAFLORES">MIRAFLORES</option>
+											<option value="SURCO">SURCO</option>
+											<option value="PUEBLO LIBRE">PUEBLO LIBRE</option>
+											<option value="SAN MIQGUEL">SAN MIQGUEL</option>
+											<option value="CERCADO DE LIMA">CERCADO DE LIMA</option>
+											<option value="LA VICTORIA">LA VICTORIA</option>
+											<option value="BARRANCO">BARRANCO</option>
+											<option value="LINCE">LINCE</option>
+											<option value="SAN LUIS">SAN LUIS</option>
+											<option value="MAGDALENA DEL MAR">MAGDALENA DEL MAR</option>
+											<option value="JESÚS MARIA">JESÚS MARIA</option>
+											<option value="SURQUILLO">SURQUILLO</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-xs-5">
 									<div class="form-group">
-										<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono">
+										<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono" required>
 									</div>
 								</div>
 							</div>
 							<div class="form-group text-left">
 								<label>
-									<input type="checkbox" value="si" name="entrega">
+									<input type="checkbox" value="si" name="entrega" id="entrega">
 									<small>Pagar en el punto de entrega</small>
 								</label>
 							</div>
@@ -394,10 +415,10 @@
 		</div>
 	</section>
 
-    <section class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+    <section class="slide" id="slide5" data-slide="5">
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
-			<div class="content grid_12 bg-gray-light pb20">
+			<div class="content bg-gray-light grid_12 pb20">
             	<img src="img/tra_bg.jpg">
             	<div class="well">
 					<small>Debe indicar lo siguiente: Envía tu CV a nuestra bolsa de trabajo y encuentra posibilidades de crecimiento profesional. bolsadetrabajo@limacourier.pe</small>
@@ -409,11 +430,35 @@
 			</div>
 		</div>
 	</section>
-    
+
+	<section class="slide" id="slide6" data-slide="6">
+		<div class="container">
+			<div class="h56 bg-gray-light"></div>
+			<div class="content grid_12 bg-white pb20">
+            	<div class="mb20 middle-panel">
+					<p>SERVICIOS</p>
+				</div>
+          		<div class="mt60">
+          			<ul class="list-services">
+          				<li>Servicio de Courier todo el día en más de doce (12) distritos.</li>
+          				<li>Verificación domiciliaria</li>
+          				<li>Verificación laboral</li>
+          				<li>Reparto de recibos y encartes</li>
+          			</ul>
+          			<hr>
+      				<p class="p-service text-justify">
+      					<i class="fa fa-quote-left fa-lg"></i> Envío de mercancía a provincias en la línea de transporte de su elección (algunas empresas son malas y sus oficinas están lejos por ejemplo en el terminal de lima norte) mejor no ponemos en su linea de elección y podríamos en todo caso dejar que luego nos sugieran aunque la ventaja seria que si ellos tomaron esa elección nosotros ya no seremos luego responsables por el tiempo estimado del envió si no la empresa de su elección.
+      					<i class="fa fa-quote-right fa-lg"></i>
+      				</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
     <section class="slide" id="slide7" data-slide="7">
 		<div class="container clearfix">
-			<div class="h56 bg-gray-light"></div>
-			<div class="content grid_12 bg-white">
+			<div class="h56 bg-white"></div>
+			<div class="content grid_12 bg-gray-light">
 				<img src="img/cont_bg.jpg" class="mb20">
 				<table align="center" cellpadding="0" cellspacing="0" id="tabla5" class="mt60">
 					<tr>

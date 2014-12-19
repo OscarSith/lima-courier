@@ -56,5 +56,14 @@ jQuery(document).ready(function ($) {
 
     });
 
+    $('form :checkbox').on('click', function() {
+        var $this = $(this),
+            name = $this.attr('name');
 
+        if (name === 'recojo') {
+            $('#entrega').prop('checked', false);
+        } else {
+            $('#recojo').prop('checked', false);
+        }
+    });
 });
