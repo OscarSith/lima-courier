@@ -12,8 +12,8 @@ body {
 img {
 	max-width: 100%;
 }
-.navbar-nav>.active>a {
-	background-color: #2FA2B2 !important;
+.navbar-nav a.act-o {
+	background-color: #1989AC !important;
 	color: #FFF!important;
 	border-radius: 6px;
 }
@@ -50,10 +50,10 @@ img {
 	margin-bottom: 7px
 }
 .form-control:focus {
-	border-color: #2FA2B2;
+	border-color: #1989AC;
 }
 .fa {
-	color: #2FA2B2
+	color: #1989AC
 }
 .navbar-brand {
 	padding: 2px 0 0 
@@ -153,7 +153,7 @@ img {
 .middle-panel{
 	height:200px;
 	max-height: 230px;
-	background-color:#2FA2B2
+	background-color:#1989AC
 }
 .middle-panel p {
 	font-size: 2.3em;
@@ -202,6 +202,7 @@ footer {
 	border-top: 4px solid #6EE0F0;
 	padding: 6px 0;
 	margin-top: 30px;
+	overflow: hidden;
 }
 .list-services {
 	text-align: left;
@@ -215,4 +216,39 @@ footer {
 }
 hr {
 	margin: 1em 20px
+}
+.underline {
+	background-color: transparent !important;
+	border-bottom: 3px solid transparent !important
+}
+.underline:hover, .active .underline{
+	border-bottom-color: #1989AC !important
+}
+ul.social-buttons {
+	margin-bottom: 0
+}
+ul.social-buttons li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	font-size: 16px;
+	line-height: 30px;
+	outline: 0;
+	background-color: #fff;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+ul.social-buttons li a:hover i{
+	color: #fff
+}
+#fb:hover {
+	background-color: #3A5795;
+}
+#tw:hover {
+	background-color: #55ACEE;
+}
+#in:hover {
+	background-color: #287BBC;
 }
