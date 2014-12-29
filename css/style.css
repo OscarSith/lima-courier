@@ -224,8 +224,8 @@ hr {
 .underline:hover, .active .underline{
 	border-bottom-color: #1989AC !important
 }
-ul.social-buttons {
-	margin-bottom: 0
+ul.social-buttons, .mb0 {
+	margin-bottom: 0 !important
 }
 ul.social-buttons li a {
 	display: block;
