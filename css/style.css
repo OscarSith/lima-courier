@@ -151,7 +151,7 @@ img {
 }
 
 .middle-panel{
-	height:200px;
+	height:80px;
 	max-height: 230px;
 	background:linear-gradient(#1989AC,#289FC5)
 }
@@ -159,7 +159,7 @@ img {
 	font-size: 2.3em;
 	color: #FFF;
 	text-shadow: #000 1px 1px 1px;
-	padding-top: 30px;
+	padding-top: 15px;
 }
 .black {
 	color: #000 !important
