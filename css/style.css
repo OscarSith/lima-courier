@@ -97,7 +97,7 @@ img {
 }
 
 #slide1{
-	margin-top: 140px
+	margin-top: 70px
 }
 #slide1 h1 {
 	font-size: 3.8em;
@@ -153,6 +153,9 @@ img {
 	color: #FFF;
 	text-shadow: #000 1px 1px 1px;
 	padding-top: 15px;
+}
+.bg-black {
+	background-color: #000
 }
 .black {
 	color: #000 !important
