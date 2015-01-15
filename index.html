@@ -70,135 +70,113 @@
 					<i class="fa fa-truck fa-1x black"></i> </p>
 				</div>
 				<div class="col-xs-12 mt60">
-					<div role="tabpanel">
-						<ul class="nav nav-tabs center-block" role="tablist">
-							<li role="presentation" class="active">
-								<a href="#recoger" aria-controls="recoger" role="tab" data-toggle="tab" class="tb" style="border:none">
-									<i class="fa fa-dropbox fa-lg"></i> 
-									<span class="hidden-xs">Donde </span> Recoger
-								</a>
-							</li>
-							<li role="presentation">
-								<a href="#entregar" aria-controls="entregar" role="tab" data-toggle="tab" class="tb" style="border:none">
-									<i class="fa fa-truck fa-lg"></i> 
-									<span class="hidden-xs">Donde </span> Entregar
-								</a>
-							</li>
-						</ul>
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane fade in active" id="recoger">
-								<form id="contactForm01" action="#" method="post">
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" required>
-										</div>
-										<div class="form-group">
-											<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
-										</div>
-										<div class="row">
-											<div class="col-xs-7">
-												<div class="form-group">
-													<select name="distrito" id="distrito" class="form-control">
-														<option value="SAN ISIDRO">SAN ISIDRO</option>
-														<option value="SAN BORJA">SAN BORJA</option>
-														<option value="BREÑA">BREÑA</option>
-														<option value="MIRAFLORES">MIRAFLORES</option>
-														<option value="SURCO">SURCO</option>
-														<option value="PUEBLO LIBRE">PUEBLO LIBRE</option>
-														<option value="SAN MIQGUEL">SAN MIQGUEL</option>
-														<option value="CERCADO DE LIMA">CERCADO DE LIMA</option>
-														<option value="LA VICTORIA">LA VICTORIA</option>
-														<option value="BARRANCO">BARRANCO</option>
-														<option value="LINCE">LINCE</option>
-														<option value="SAN LUIS">SAN LUIS</option>
-														<option value="MAGDALENA DEL MAR">MAGDALENA DEL MAR</option>
-														<option value="JESÚS MARIA">JESÚS MARIA</option>
-														<option value="SURQUILLO">SURQUILLO</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-xs-5">
-												<div class="form-group">
-													<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
-												</div>
-											</div>
-										</div>
-										<div class="form-group text-left">
-											<label>
-												<input type="checkbox" value="si" name="recojo" id="recojo">
-												<small>Pagar en el punto de recojo</small>
-											</label>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<textarea name="descripcion" id="descripcion" class="form-control" placeholder="Escriba aqui su mensaje..." style="height:181px"></textarea>
-										</div>
-										<div class="form-group">
-											<button class="btn btn-default"><i class="fa fa-envelope"></i> ENVIAR</button>
-										</div>
-									</div>
-								</form>
-								<div class="clearfix"></div>
+					<form id="contactForm" action="#" method="post">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" required>
 							</div>
-							<div role="tabpanel" class="tab-pane fade" id="entregar">
-								<form id="contactForm02" action="#" method="post">
-									<div class="col-sm-3 hidden-sm"></div>
-									<div class="col-xs-12 col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="name_deliver" name="name_deliver" placeholder="Nombre y apellido completo" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="direccion_deliver" name="direccion_deliver" placeholder="Dirección" required>
-										</div>
-										<div class="row">
-											<div class="col-xs-7">
-												<div class="form-group">
-													<select name="distrito_deliver" id="distrito_deliver" class="form-control">
-														<option value="SAN ISIDRO">SAN ISIDRO</option>
-														<option value="SAN BORJA">SAN BORJA</option>
-														<option value="BREÑA">BREÑA</option>
-														<option value="MIRAFLORES">MIRAFLORES</option>
-														<option value="SURCO">SURCO</option>
-														<option value="PUEBLO LIBRE">PUEBLO LIBRE</option>
-														<option value="SAN MIQGUEL">SAN MIQGUEL</option>
-														<option value="CERCADO DE LIMA">CERCADO DE LIMA</option>
-														<option value="LA VICTORIA">LA VICTORIA</option>
-														<option value="BARRANCO">BARRANCO</option>
-														<option value="LINCE">LINCE</option>
-														<option value="SAN LUIS">SAN LUIS</option>
-														<option value="MAGDALENA DEL MAR">MAGDALENA DEL MAR</option>
-														<option value="JESÚS MARIA">JESÚS MARIA</option>
-														<option value="SURQUILLO">SURQUILLO</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-xs-5">
-												<div class="form-group">
-													<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono" required>
-												</div>
-											</div>
-										</div>
-										<div class="form-group text-left">
-											<label>
-												<input type="checkbox" value="si" name="entrega" id="entrega">
-												<small>Pagar en el punto de entrega</small>
-											</label>
-										</div>
-										<div class="form-group">
-											<button class="btn btn-default"><i class="fa fa-envelope"></i> ENVIAR</button>
-										</div>
-									</div>
-									<div class="col-sm-3 hidden-sm"></div>
-								</form>
-								<div class="clearfix"></div>
+							<div class="form-group">
+								<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
 							</div>
-							<div class="clearfix"></div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+							</div>
+							<div class="row">
+								<div class="col-xs-7">
+									<div class="form-group">
+										<select name="distrito" id="distrito" class="form-control">
+											<option value="SAN ISIDRO">SAN ISIDRO</option>
+											<option value="SAN BORJA">SAN BORJA</option>
+											<option value="BREÑA">BREÑA</option>
+											<option value="MIRAFLORES">MIRAFLORES</option>
+											<option value="SURCO">SURCO</option>
+											<option value="PUEBLO LIBRE">PUEBLO LIBRE</option>
+											<option value="SAN MIQGUEL">SAN MIQGUEL</option>
+											<option value="CERCADO DE LIMA">CERCADO DE LIMA</option>
+											<option value="LA VICTORIA">LA VICTORIA</option>
+											<option value="BARRANCO">BARRANCO</option>
+											<option value="LINCE">LINCE</option>
+											<option value="SAN LUIS">SAN LUIS</option>
+											<option value="MAGDALENA DEL MAR">MAGDALENA DEL MAR</option>
+											<option value="JESÚS MARIA">JESÚS MARIA</option>
+											<option value="SURQUILLO">SURQUILLO</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<div class="form-group">
+										<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+									</div>
+								</div>
+							</div>
+							<div class="form-group text-left">
+								<label>
+									<input type="checkbox" value="si" name="recojo" id="recojo">
+									<small>Pagar en el punto de recojo</small>
+								</label>
+							</div>
 						</div>
-					</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea name="descripcion" id="descripcion" class="form-control" placeholder="Escriba aqui su mensaje..." style="height:181px"></textarea>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="row mb20">
+							<span>
+								<i class="fa fa-truck fa-4x"></i>
+								<small class="block">¿DONDE LO ENTREGO?</small>
+							</span>
+						</div>
+						<div class="col-sm-3 hidden-sm"></div>
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name_deliver" name="name_deliver" placeholder="Nombre y apellido completo" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="direccion_deliver" name="direccion_deliver" placeholder="Dirección" required>
+							</div>
+							<div class="row">
+								<div class="col-xs-7">
+									<div class="form-group">
+										<select name="distrito_deliver" id="distrito_deliver" class="form-control">
+											<option value="SAN ISIDRO">SAN ISIDRO</option>
+											<option value="SAN BORJA">SAN BORJA</option>
+											<option value="BREÑA">BREÑA</option>
+											<option value="MIRAFLORES">MIRAFLORES</option>
+											<option value="SURCO">SURCO</option>
+											<option value="PUEBLO LIBRE">PUEBLO LIBRE</option>
+											<option value="SAN MIQGUEL">SAN MIQGUEL</option>
+											<option value="CERCADO DE LIMA">CERCADO DE LIMA</option>
+											<option value="LA VICTORIA">LA VICTORIA</option>
+											<option value="BARRANCO">BARRANCO</option>
+											<option value="LINCE">LINCE</option>
+											<option value="SAN LUIS">SAN LUIS</option>
+											<option value="MAGDALENA DEL MAR">MAGDALENA DEL MAR</option>
+											<option value="JESÚS MARIA">JESÚS MARIA</option>
+											<option value="SURQUILLO">SURQUILLO</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<div class="form-group">
+										<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono" required>
+									</div>
+								</div>
+							</div>
+							<div class="form-group text-left">
+								<label>
+									<input type="checkbox" value="si" name="entrega" id="entrega">
+									<small>Pagar en el punto de entrega</small>
+								</label>
+							</div>
+							<div class="form-group">
+								<button class="btn btn-default"><i class="fa fa-envelope"></i> ENVIAR</button>
+							</div>
+						</div>
+						<div class="col-sm-3 hidden-sm"></div>
+					</form>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
@@ -376,7 +354,9 @@ window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.ge
 								9881-63388
 							</small>
 						</td>
-						<td><small>courier@limacourier.pe rafaelmolina@limacourier.pe alexmay@limacourier.pe bolsadetrabajo@limacourier.pe Contactenos@limacourier.pe negociosdirectos@limacourier.pe</small></td>
+						<td>
+							<small>courier@limacourier.pe</small>
+						</td>
 
 					</tr>
 				</table>
