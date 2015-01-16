@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#slide1" title="Blue360" data-slide="1">
+                <a class="page-scroll" href="#slide1" title="Blue360" data-slide="1">
                     <img src="img/logo_lima_curier_v2.png" alt="Lima Courier" id="logo">
                 </a>
             </div>
@@ -173,6 +173,12 @@
 							<div class="form-group">
 								<button class="btn btn-default"><i class="fa fa-envelope"></i> ENVIAR</button>
 							</div>
+							<div class="alert alert-success alert-dismissible" role="alert" style="display:none">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<span></span>
+							</div>
 						</div>
 						<div class="col-sm-3 hidden-sm"></div>
 					</form>
@@ -261,18 +267,17 @@
 					Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser más rentables, basados en el cumplimiento de metas y objetivos.
 					</small>
             	</div>
-
-            	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:62px;" allowTransparency="true"></iframe>
-
-<a class="twitter-hashtag-button"
-  href="https://twitter.com/intent/tweet?button_hashtag=TwitterStories&text=My%20story%20is%20about%20what's%20happening%20today"
-  data-related="twitter">
-Tweet #TwitterStories
-</a>
-<script type="text/javascript">
-window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
-</script>
-
+            	<ul class="list-inline social-buttons">
+                    <li>
+                        <a href="#" target="_blank" id="fb"><i class="fa fa-facebook fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" id="tw"><i class="fa fa-twitter fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" id="in"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </li>
+                </ul>
 			</div>
 		</div>
 	</section>
@@ -318,66 +323,50 @@ window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.ge
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
 			<div class="content grid_12 bg-gray-light">
-				<div class=" middle-panel">
+				<div class="middle-panel">
 					<p>Contáctenos
 					<i class="fa fa-tty fa-1x black"></i></p>
 				</div>
 				<img src="img/cont_bg_new.jpg" class="mb20">
-				<table align="center" cellpadding="0" cellspacing="0" id="tabla5" class="mt05">
-					<tr>
-						<td width="33%">
-							<span>
-								<i class="fa fa-map-marker fa-4x"></i>
-							</span>
-						</td>
-						<td rowspan="2"><img src="img/divider.png" width="3" height="200"></td>
-						<td width="33%">
-							<span>
-								<i class="fa fa-phone-square fa-4x"></i>
-							</span>
-						</td>
-						<td rowspan="2"><img src="img/divider.png" width="3" height="200"></td>
-						<td width="33%">
-							<span>
-								<i class="fa fa-send fa-4x"></i>
-							</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<small>CALLE TOMAS RAMSEY # 306 MAGDALENA DEL MAR, <br>LIMA, PERÚ</small>
-						</td>
-						<td>
-							<small>
-								461-1927 <br>(RPM) #9529-47702<br>
-								9529-47702<br> (RPM) #9881-63388<br>
-								9881-63388
-							</small>
-						</td>
-						<td>
-							<small>courier@limacourier.pe</small>
-						</td>
-
-					</tr>
-				</table>
+				<div class="col-sm-4">
+					<div class="row mb20">
+						<span class="col-xs-3 col-sm-12">
+							<i class="fa fa-map-marker fa-3x"></i>
+						</span>
+						<address class="col-xs-9 col-sm-12">
+							CALLE TOMAS RAMSEY # 306 MAGDALENA DEL MAR, <br>LIMA, PERÚ
+						</address>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row mb20">
+						<span class="col-xs-3 col-sm-12">
+							<i class="fa fa-phone-square" style="font-size:2.7em"></i>
+						</span>
+						<address class="col-xs-9 col-sm-12">
+							461-1927 | (RPM) #9529-47702<br>
+							9529-47702 | (RPM) #9881-63388<br>
+							9881-63388
+						</address>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row mb20">
+						<span class="col-xs-3 col-sm-12">
+							<i class="fa fa-send" style="font-size:2.6em"></i>
+						</span>
+						<address class="col-xs-9 col-sm-12">
+							courier@limacourier.pe
+						</address>
+					</div>
+				</div>
+				<img src="img/divider.png" width="3" height="200" class="hidden">
+				<div class="clearfix"></div>
 				<footer>
 					<div class="col-md-6" style="margin-top:3px">
 						<small>
-							<i class="fa fa-copyright fa-lg"></i> COPYRIGHT 2015 LIMACOURIER, ALL RIGHTS RESERVED
+							<i class="fa fa-copyright fa-lg"></i> Copyright 2015 limacourier, all rights reserved
 						</small>
-					</div>
-					<div class="col-md-6">
-						<ul class="list-inline social-buttons">
-	                        <li>
-	                            <a href="#" target="_blank" id="fb"><i class="fa fa-facebook"></i></a>
-	                        </li>
-	                        <li>
-	                            <a href="#" target="_blank" id="tw"><i class="fa fa-twitter"></i></a>
-	                        </li>
-	                        <li>
-	                            <a href="#" target="_blank" id="in"><i class="fa fa-linkedin"></i></a>
-	                        </li>
-	                    </ul>
 					</div>
 				</footer>
 			</div>

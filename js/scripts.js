@@ -66,4 +66,33 @@ jQuery(document).ready(function ($) {
             $('#recojo').prop('checked', false);
         }
     });
+
+    $('#contactForm').on('submit', function(e){
+        e.preventDefault();
+        var $this = $(this),
+            data = $this.serialize(),
+            $inputs = $this.find(':input'),
+            $btn = $this.find('#btn-send');
+
+        $inputs.prop('disabled', true);
+        $btn.text('Enviando...');
+        $.ajax({
+            url: 'send.php',
+            data: data,
+            type: 'post',
+            dataType: 'json'
+        }).done(function(rec){
+            if (rec.load) {
+                $this[0].reset();
+                $('div.alert-success').fadeIn('slow').children('span').text(rec.success_message);
+            } else {
+                alert(rec.error_message);
+            }
+        }).always(function(){
+            $inputs.prop('disabled', false);
+            $btn.text('Enviar');
+        }).error(function(x,m){
+            alert(x+' '+m);
+        });
+    });
 });

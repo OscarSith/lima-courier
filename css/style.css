@@ -186,6 +186,9 @@ img {
 		margin-left: 15px;
 		width: 80px;
 	}
+	#slide7 address {
+		text-align: left !important;
+	}
 }
 
 footer {
@@ -221,11 +224,11 @@ ul.social-buttons, .mb0 {
 }
 ul.social-buttons li a {
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 42px;
+	height: 42px;
 	border-radius: 100%;
 	font-size: 16px;
-	line-height: 30px;
+	line-height: 57px;
 	outline: 0;
 	background-color: #fff;
 	-webkit-transition: all .3s;
@@ -251,7 +254,7 @@ ul.social-buttons li a:hover i{
 	display: inline-block;
 	float: none !important;
 }
-#contactForm01, #contactForm02 {
+#contactForm01, #contactForm02, .mt20 {
 	margin-top: 20px;
 }
 .nav-tabs>li.active>a {
@@ -259,4 +262,7 @@ ul.social-buttons li a:hover i{
 }
 .tb {
 	background-color: #FFF;
+}
+#slide7 address{
+	font-size: .8em
 }
