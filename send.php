@@ -61,18 +61,20 @@ else
 
 	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-	$message = '<br><b>Nombre</b>: '.$values['name'].'<br>'
+	$message = '<br>'
+				.'<h3 style="color:#1989AC">Lugar de entrega</h3>'
+				.'<b>Nombre</b>: '.$values['name'].'<br>'
 				.'<b>Correo</b>: '.$values['correo'].'<br>'
 				.'<b>Dirección</b>: '.$values['direccion'].'<br>'
 				.'<b>Distrito</b>: '.$values['distrito'].'<br>'
 				.'<b>Teléfono</b>: '.$values['telefono'].'<br>'
 				.'<b>Mensaje:</b><br>'.nl2br($values['descripcion']).'<br><br><br>'
-				.'<h3 style="color:#1989AC">Donde lo entrego</h3>'
+				.'<h3 style="color:#1989AC">Lugar de recojo</h3>'
 				.'<b>Nombre</b>: '.$values['name_deliver'].'<br>'
 				.'<b>Dirección</b>: '.$values['direccion_deliver'].'<br>'
 				.'<b>Distrito</b>: '.$values['distrito_deliver'].'<br>'
 				.'<b>Teléfono</b>: '.$values['telefono_deliver'].'<br>'
-				.'<p style="color:red"><b>* '.(isset($values['recojo']) ? 'Pagar en el punto de recojo' : 'Pagar en el punto de entrega').'</b></p>';
+				.'<p style="color:red"><b>* Cobrar en el punto '.(isset($values['recojo']) ? 'de recojo' : 'de entrega').'</b></p>';
 
 	try {
 		$mail->isSMTP();
