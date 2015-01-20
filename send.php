@@ -62,18 +62,18 @@ else
 	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 	$message = '<br>'
-				.'<h3 style="color:#1989AC">Lugar de entrega</h3>'
+				.'<h3 style="color:#1989AC">Lugar de recojo del producto</h3>'
 				.'<b>Nombre</b>: '.$values['name'].'<br>'
 				.'<b>Correo</b>: '.$values['correo'].'<br>'
 				.'<b>Dirección</b>: '.$values['direccion'].'<br>'
 				.'<b>Distrito</b>: '.$values['distrito'].'<br>'
 				.'<b>Teléfono</b>: '.$values['telefono'].'<br>'
-				.'<b>Mensaje:</b><br>'.nl2br($values['descripcion']).'<br><br><br>'
-				.'<h3 style="color:#1989AC">Lugar de recojo</h3>'
+				.'<b>Mensaje:</b><br>'.nl2br($values['descripcion']).'<br><br>'
+				.'<h3 style="color:#1989AC">Lugar de entrega del producto</h3>'
 				.'<b>Nombre</b>: '.$values['name_deliver'].'<br>'
 				.'<b>Dirección</b>: '.$values['direccion_deliver'].'<br>'
 				.'<b>Distrito</b>: '.$values['distrito_deliver'].'<br>'
-				.'<b>Teléfono</b>: '.$values['telefono_deliver'].'<br>'
+				.'<b>Teléfono</b>: '.$values['telefono_deliver'].'<br><br>'
 				.'<p style="color:red"><b>* Cobrar en el punto '.(isset($values['recojo']) ? 'de recojo' : 'de entrega').'</b></p>';
 
 	try {
@@ -88,7 +88,9 @@ else
 
 		$mail->From = $values['correo'];
 		$mail->FromName = $values['name'];
-		$mail->addAddress('courier@limacourier.pe', 'Rafael Molina');
+		$mail->addAddress('courier@limacourier.pe', 'Lima Courier');
+		$mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
+		$mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
 		$mail->addReplyTo('no-reply@limacourier.com', 'Lima Courier');
 
 		$mail->isHTML(true);
@@ -105,5 +107,6 @@ else
 		$json = ['load' => false, 'error_message' => $pex->getMessage()];
 	}
 }
+
 
 echo json_encode($json);
