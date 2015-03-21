@@ -64,7 +64,7 @@ else
 
 	$message = '<br>'
 				.'<h3 style="color:#1989AC">Lugar de recojo del producto</h3>'
-				.'<strong>FECHA: '.$value['fecha'].'</strong><br>'
+				.'<strong>FECHA: '.$values['fecha'].'</strong><br>'
 				.'<b>Nombre</b>: '.$values['name'].'<br>'
 				.'<b>Correo</b>: '.$values['correo'].'<br>'
 				.'<b>Dirección</b>: '.$values['direccion'].'<br>'
