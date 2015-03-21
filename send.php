@@ -101,9 +101,9 @@ else
 		$mail->Body    = $message;
 
 		if($mail->send()) {
-			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
-		} else {
 		    $json['success_message'] = 'Su Solicitud está haciendo Procesada';
+		} else {
+			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
 		}
 	} catch (phpmailerException $pex) {
 		$json = ['load' => false, 'error_message' => $pex->getMessage()];
