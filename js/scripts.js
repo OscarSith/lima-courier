@@ -31,6 +31,13 @@ button.click(function (e) {
 
 });
 
+var $fecha = $('#date');
+$fecha.attr('value', moment().format('YYYY-MM-DD'));
+new Pikaday({
+    field: $fecha[0],
+    minDate: moment().toDate()
+});
+
 $('form :checkbox').on('click', function() {
     var $this = $(this),
         name = $this.attr('name');
@@ -59,7 +66,8 @@ $('#contactForm').on('submit', function(e){
     }).done(function(rec){
         if (rec.load) {
             $this[0].reset();
-            $('div.alert-success').fadeIn('slow').children('span').text(rec.success_message);
+            $('#alert-modal').find('.modal-body p').text(rec.success_message)
+                .end().modal('show');
         } else {
             alert(rec.error_message);
         }

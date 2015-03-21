@@ -6,6 +6,7 @@ $params = [
 	'direccion' => FILTER_SANITIZE_STRING,
 	'distrito' => FILTER_SANITIZE_STRING,
 	'telefono' => FILTER_SANITIZE_STRING,
+	'fecha' => FILTER_SANITIZE_STRING,
 	'recojo' => FILTER_SANITIZE_STRING,
 	'descripcion' => FILTER_SANITIZE_STRING,
 	'name_deliver' => FILTER_SANITIZE_STRING,
@@ -19,39 +20,39 @@ $values = filter_input_array(INPUT_POST, $params);
 
 if (empty($values['name']))
 {
-	$json = ['load' => true, 'error_message' => 'El nombre y apellido es requerido'];
+	$json = ['load' => false, 'error_message' => 'El nombre y apellido es requerido'];
 }
 else if (!$values['correo'])
 {
-	$json = ['load' => true, 'error_message' => 'Debe poner un correo válido'];
+	$json = ['load' => false, 'error_message' => 'Debe poner un correo válido'];
 }
 else if (empty($values['distrito']))
 {
-	$json = ['load' => true, 'error_message' => 'Elija un distrito'];
+	$json = ['load' => false, 'error_message' => 'Elija un distrito'];
 }
 else if (empty($values['telefono']))
 {
-	$json = ['load' => true, 'error_message' => 'El teléfono es requerido'];
+	$json = ['load' => false, 'error_message' => 'El teléfono es requerido'];
 }
 else if (empty($values['name_deliver']))
 {
-	$json = ['load' => true, 'error_message' => 'El nombre y apellido de la persona que recibirá la encomienda'];
+	$json = ['load' => false, 'error_message' => 'El nombre y apellido de la persona que recibirá la encomienda'];
 }
 else if (empty($values['direccion_deliver']))
 {
-	$json = ['load' => true, 'error_message' => 'Escriba la dirección donde entregará la encomienda'];
+	$json = ['load' => false, 'error_message' => 'Escriba la dirección donde entregará la encomienda'];
 }
 else if (empty($values['distrito_deliver']))
 {
-	$json = ['load' => true, 'error_message' => 'Elija el distrito donde entregará a encomienda'];
+	$json = ['load' => false, 'error_message' => 'Elija el distrito donde entregará a encomienda'];
 }
 else if (empty($values['telefono_deliver']))
 {
-	$json = ['load' => true, 'error_message' => 'Escriba le teléfono de la persona que recibirá la encomienda'];
+	$json = ['load' => false, 'error_message' => 'Escriba le teléfono de la persona que recibirá la encomienda'];
 }
 else if (!isset($values['recojo']) && !isset($values['entrega']))
 {
-	$json = ['load' => true, 'error_message' => 'Debe elegir si Paga "en el punto de recojo" ó "en el punto de entrega"'];
+	$json = ['load' => false, 'error_message' => 'Debe elegir si Paga "en el punto de recojo" ó "en el punto de entrega"'];
 }
 else
 {
@@ -63,6 +64,7 @@ else
 
 	$message = '<br>'
 				.'<h3 style="color:#1989AC">Lugar de recojo del producto</h3>'
+				.'<strong>FECHA: '.$value['fecha'].'</strong><br>'
 				.'<b>Nombre</b>: '.$values['name'].'<br>'
 				.'<b>Correo</b>: '.$values['correo'].'<br>'
 				.'<b>Dirección</b>: '.$values['direccion'].'<br>'
@@ -99,9 +101,9 @@ else
 		$mail->Body    = $message;
 
 		if($mail->send()) {
-		    $json['success_message'] = 'Tu mensaje ha sido enviado';
-		} else {
 			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
+		} else {
+		    $json['success_message'] = 'Su Solicitud está haciendo Procesada';
 		}
 	} catch (phpmailerException $pex) {
 		$json = ['load' => false, 'error_message' => $pex->getMessage()];
