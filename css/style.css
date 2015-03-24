@@ -87,7 +87,7 @@ img {
 }
 .well {
 	color: #fff;
-	background-color: #000;
+	background-color: #5A5A5A;
 	border-radius: 0;
 	border: none;
 }
@@ -152,7 +152,7 @@ img {
 	padding-top: 15px;
 }
 .bg-black {
-	background-color: #000
+	background-color: #5A5A5A
 }
 .black {
 	color: #000 !important
@@ -266,4 +266,38 @@ ul.social-buttons li a:hover i{
 }
 #slide7 address{
 	font-size: .8em
+}
+#fixed-contact-rigth {
+	background-color: #fff;
+	border-radius: 8px 0 0 8px;
+	box-shadow: 0 0 11px #797979;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	position: fixed;
+	right: 0px;
+	text-align: center;
+	top: 50%;
+	z-index: 9;
+}
+#panel-rigth {
+	float: right;
+}
+#panel-rigth p {
+	margin: 0 4px 4px;
+	font-size: smaller;
+}
+#panel-left{
+	float: left;
+	font-size: .9em;
+	overflow: hidden;
+	text-align: left;
+	white-space: nowrap;
+}
+#panel-left div {
+	border-right: 1px solid #D2D2D2;
+	padding: 8px 11px;
+}
+#terminos .modal-body {
+	height: 580px;
+	overflow: auto;
 }

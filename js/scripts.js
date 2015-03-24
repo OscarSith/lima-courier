@@ -37,6 +37,16 @@ new Pikaday({
     field: $fecha[0],
     minDate: moment().toDate()
 });
+var n = 1;
+$('#fixed-contact-rigth').on('mouseover mouseleave', function(e){
+    if(e.type === 'mouseover' && n == 1) {
+      $(this).children('#panel-left').animate({width:'230px'}, 'fast');
+      n++;
+    } else if((e.type === 'mouseout' || e.type === 'mouseleave') && n == 2) {
+        $(this).children('#panel-left').animate({width:'0px'}, 'fast');
+        n = 1;
+    }
+});
 
 $('form :checkbox').on('click', function() {
     var $this = $(this),
