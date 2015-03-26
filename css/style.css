@@ -301,3 +301,5 @@ ul.social-buttons li a:hover i{
 	height: 580px;
 	overflow: auto;
 }
+#terminos p {padding-left: 40px;}
+#terminos ul {text-align: justify;}
