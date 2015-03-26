@@ -37,12 +37,19 @@ new Pikaday({
     field: $fecha[0],
     minDate: moment().toDate()
 });
+
+var events = 'mouseover mouseleave';
+if ('ontouchstart' in document.documentElement) {
+    events = 'click';
+}
 var n = 1;
-$('#fixed-contact-rigth').on('mouseover mouseleave', function(e){
-    if(e.type === 'mouseover' && n == 1) {
+$('#fixed-contact-rigth').on(events, function(e){
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    if((e.type === 'mouseover' || e.type === 'click') && n == 1) {
       $(this).children('#panel-left').animate({width:'230px'}, 'fast');
       n++;
-    } else if((e.type === 'mouseout' || e.type === 'mouseleave') && n == 2) {
+    } else if((e.type === 'mouseout' || e.type === 'mouseleave' || e.type === 'click') && n == 2) {
         $(this).children('#panel-left').animate({width:'0px'}, 'fast');
         n = 1;
     }
