@@ -93,6 +93,7 @@ else
 		$mail->addAddress('courier@limacourier.pe', 'Lima Courier');
 		$mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
 		$mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
+		$mail->addAddress($values['correo'], $values['name']);
 		$mail->addReplyTo('no-reply@limacourier.com', 'Lima Courier');
 
 		$mail->isHTML(true);
