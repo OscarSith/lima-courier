@@ -95,3 +95,7 @@ $('#contactForm').on('submit', function(e){
         alert(x+' '+m);
     });
 });
+$('#sliders-home').carousel({
+  interval: 400,
+  pause: 'none'
+})
