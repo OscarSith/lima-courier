@@ -106,6 +106,11 @@ else
 		} else {
 			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
 		}
+		 /* else if (!isset($values['terminos']) && !isset($values['terminos']))
+		{
+			$json = ['load' => false, 'error_message' => 'Debe de aceptar los Terminos y Condiciones de Uso"'];
+		} */
+
 	} catch (phpmailerException $pex) {
 		$json = ['load' => false, 'error_message' => $pex->getMessage()];
 	}
