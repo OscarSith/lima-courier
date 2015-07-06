@@ -96,6 +96,6 @@ $('#contactForm').on('submit', function(e){
     });
 });
 $('#sliders-home').carousel({
-  interval: 400,
+  interval: 4000,
   pause: 'none'
 })

@@ -8,12 +8,13 @@ $params = [
 	'telefono' => FILTER_SANITIZE_STRING,
 	'fecha' => FILTER_SANITIZE_STRING,
 	'recojo' => FILTER_SANITIZE_STRING,
+	'entrega' => FILTER_SANITIZE_STRING,
 	'descripcion' => FILTER_SANITIZE_STRING,
 	'name_deliver' => FILTER_SANITIZE_STRING,
 	'direccion_deliver' => FILTER_SANITIZE_STRING,
 	'distrito_deliver' => FILTER_SANITIZE_STRING,
 	'telefono_deliver' => FILTER_SANITIZE_STRING,
-	'entrega' => FILTER_SANITIZE_STRING
+	'terminos' => FILTER_SANITIZE_STRING
 ];
 
 $values = filter_input_array(INPUT_POST, $params);
@@ -53,6 +54,10 @@ else if (empty($values['telefono_deliver']))
 else if (!isset($values['recojo']) && !isset($values['entrega']))
 {
 	$json = ['load' => false, 'error_message' => 'Debe elegir si Paga "en el punto de recojo" ó "en el punto de entrega"'];
+}
+ else if (!isset($values['terminos']))
+{
+	$json = ['load' => false, 'error_message' => 'Debe de aceptar los Terminos y Condiciones de Uso"'];
 }
 else
 {
@@ -106,10 +111,6 @@ else
 		} else {
 			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
 		}
-		 /* else if (!isset($values['terminos']) && !isset($values['terminos']))
-		{
-			$json = ['load' => false, 'error_message' => 'Debe de aceptar los Terminos y Condiciones de Uso"'];
-		} */
 
 	} catch (phpmailerException $pex) {
 		$json = ['load' => false, 'error_message' => $pex->getMessage()];
