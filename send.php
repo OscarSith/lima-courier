@@ -86,10 +86,10 @@ else
 	try {
 		$mail->isSMTP();
 		$mail->SMTPAuth = true;
-		$mail->Host = '';
+		$mail->Host = 'smtp.mandrillapp.com';
 		$mail->SMTPSecure = 'tls';
 		$mail->CharSet = 'UTF-8';
-		$mail->Username = '';
+		$mail->Username = 'larriega@gmail.com';
 		$mail->Password = '';
 		$mail->Port = 587;
 
