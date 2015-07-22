@@ -99,7 +99,7 @@ else
 		$mail->addAddress('contacto@limacourier.pe', 'Lima Courier - Colombia');
 		$mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
 		$mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
-		$mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
+		// $mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
 		$mail->addAddress($values['correo'], $values['name']);
 		$mail->addReplyTo('no-reply@limacourier.com', 'Lima Courier');
 

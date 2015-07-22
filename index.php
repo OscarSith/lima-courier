@@ -2,9 +2,9 @@
 $options = '<option value="Centro de Lima">Centro de Lima</option>
 <option value="Ancón">Ancón</option>
 <option value="Ate">Ate</option>
-<option value="Callao">Callao</option>
 <option value="Barranco">Barranco</option>
 <option value="Breña">Breña</option>
+<option value="Callao">Callao</option>
 <option value="Carabayllo">Carabayllo</option>
 <option value="Chaclacayo">Chaclacayo</option>
 <option value="Chorrillos">Chorrillos</option>
