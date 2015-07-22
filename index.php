@@ -1,3 +1,49 @@
+<?php
+$options = '<option value="Centro de Lima">Centro de Lima</option>
+<option value="Ancón">Ancón</option>
+<option value="Ate">Ate</option>
+<option value="Callao">Callao</option>
+<option value="Barranco">Barranco</option>
+<option value="Breña">Breña</option>
+<option value="Carabayllo">Carabayllo</option>
+<option value="Chaclacayo">Chaclacayo</option>
+<option value="Chorrillos">Chorrillos</option>
+<option value="Cieneguilla">Cieneguilla</option>
+<option value="Comas">Comas</option>
+<option value="ElAgustino">ElAgustino</option>
+<option value="Independencia">Independencia</option>
+<option value="Jesús María">Jesús María</option>
+<option value="La Molina">La Molina</option>
+<option value="La Victoria">La Victoria</option>
+<option value="Lince">Lince</option>
+<option value="Los Olivos">Los Olivos</option>
+<option value="Lurigancho-Chosica">Lurigancho-Chosica</option>
+<option value="Lurin">Lurin</option>
+<option value="Magdalena del Mar">Magdalena del Mar</option>
+<option value="Miraflores">Miraflores</option>
+<option value="Pachacámac">Pachacámac</option>
+<option value="Pucusana">Pucusana</option>
+<option value="Pueblo Libre">Pueblo Libre</option>
+<option value="Puente Piedra">Puente Piedra </option>
+<option value="Punta Hermosa">Punta Hermosa</option>
+<option value="Punta Negra">Punta Negra</option>
+<option value="Rímac">Rímac</option>
+<option value="San Bartolo">San Bartolo</option>
+<option value="San Borja">San Borja</option>
+<option value="San Isidro">San Isidro</option>
+<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+<option value="San Juan de Miraflores">San Juan de Miraflores</option>
+<option value="San Luis">San Luis</option>
+<option value="San Martín de Porres">San Martín de Porres</option>
+<option value="San Miguel">San Miguel</option>
+<option value="Santa Anita">Santa Anita</option>
+<option value="Santa María del Mar">Santa María del Mar</option>
+<option value="Santa Rosa">Santa Rosa</option>
+<option value="Santiago de Surco">Santiago de Surco</option>
+<option value="Surquillo">Surquillo</option>
+<option value="Villa El Salvador">Villa El Salvador</option>
+<option value="Villa María del Triunfo">Villa María del Triunfo</option>';
+?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
@@ -134,49 +180,7 @@
 								<div class="col-xs-7 col-sm-4">
 									<div class="form-group">
 										<select name="distrito" id="distrito" class="form-control">
-												<option value="Centro de Lima">Centro de Lima</option>
-												<option value="Ancón">Ancón</option>
-												<option value="Ate">Ate</option>
-												<option value="Barranco">Barranco</option>
-												<option value="Breña">Breña</option>
-												<option value="Carabayllo">Carabayllo</option>
-												<option value="Chaclacayo">Chaclacayo</option>
-												<option value="Chorrillos">Chorrillos</option>
-												<option value="Cieneguilla">Cieneguilla</option>
-												<option value="Comas">Comas</option>
-												<option value="ElAgustino">ElAgustino</option>
-												<option value="Independencia">Independencia</option>
-												<option value="Jesús María">Jesús María</option>
-												<option value="La Molina">La Molina</option>
-												<option value="La Victoria">La Victoria</option>
-												<option value="Lince">Lince</option>
-												<option value="Los Olivos">Los Olivos</option>
-												<option value="Lurigancho-Chosica">Lurigancho-Chosica</option>
-												<option value="Lurin">Lurin</option>
-												<option value="Magdalena del Mar">Magdalena del Mar</option>
-												<option value="Miraflores">Miraflores</option>
-												<option value="Pachacámac">Pachacámac</option>
-												<option value="Pucusana">Pucusana</option>
-												<option value="Pueblo Libre">Pueblo Libre</option>
-												<option value="Puente Piedra ">Puente Piedra </option>
-												<option value="Punta Hermosa">Punta Hermosa</option>
-												<option value="Punta Negra">Punta Negra</option>
-												<option value="Rímac">Rímac</option>
-												<option value="San Bartolo">San Bartolo</option>
-												<option value="San Borja">San Borja</option>
-												<option value="San Isidro">San Isidro</option>
-												<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
-												<option value="San Juan de Miraflores">San Juan de Miraflores</option>
-												<option value="San Luis">San Luis</option>
-												<option value="San Martín de Porres">San Martín de Porres</option>
-												<option value="San Miguel">San Miguel</option>
-												<option value="Santa Anita">Santa Anita</option>
-												<option value="Santa María del Mar">Santa María del Mar</option>
-												<option value="Santa Rosa">Santa Rosa</option>
-												<option value="Santiago de Surco">Santiago de Surco</option>
-												<option value="Surquillo">Surquillo</option>
-												<option value="Villa El Salvador">Villa El Salvador</option>
-												<option value="Villa María del Triunfo ">Villa María del Triunfo </option>
+											<?php echo $options ?>
 										</select>
 									</div>
 								</div>
@@ -225,49 +229,7 @@
 								<div class="col-xs-7">
 									<div class="form-group">
 										<select name="distrito_deliver" id="distrito_deliver" class="form-control">
-												<option value="Centro de Lima">Centro de Lima</option>
-												<option value="Ancón">Ancón</option>
-												<option value="Ate">Ate</option>
-												<option value="Barranco">Barranco</option>
-												<option value="Breña">Breña</option>
-												<option value="Carabayllo">Carabayllo</option>
-												<option value="Chaclacayo">Chaclacayo</option>
-												<option value="Chorrillos">Chorrillos</option>
-												<option value="Cieneguilla">Cieneguilla</option>
-												<option value="Comas">Comas</option>
-												<option value="ElAgustino">ElAgustino</option>
-												<option value="Independencia">Independencia</option>
-												<option value="Jesús María">Jesús María</option>
-												<option value="La Molina">La Molina</option>
-												<option value="La Victoria">La Victoria</option>
-												<option value="Lince">Lince</option>
-												<option value="Los Olivos">Los Olivos</option>
-												<option value="Lurigancho-Chosica">Lurigancho-Chosica</option>
-												<option value="Lurin">Lurin</option>
-												<option value="Magdalena del Mar">Magdalena del Mar</option>
-												<option value="Miraflores">Miraflores</option>
-												<option value="Pachacámac">Pachacámac</option>
-												<option value="Pucusana">Pucusana</option>
-												<option value="Pueblo Libre">Pueblo Libre</option>
-												<option value="Puente Piedra ">Puente Piedra </option>
-												<option value="Punta Hermosa">Punta Hermosa</option>
-												<option value="Punta Negra">Punta Negra</option>
-												<option value="Rímac">Rímac</option>
-												<option value="San Bartolo">San Bartolo</option>
-												<option value="San Borja">San Borja</option>
-												<option value="San Isidro">San Isidro</option>
-												<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
-												<option value="San Juan de Miraflores">San Juan de Miraflores</option>
-												<option value="San Luis">San Luis</option>
-												<option value="San Martín de Porres">San Martín de Porres</option>
-												<option value="San Miguel">San Miguel</option>
-												<option value="Santa Anita">Santa Anita</option>
-												<option value="Santa María del Mar">Santa María del Mar</option>
-												<option value="Santa Rosa">Santa Rosa</option>
-												<option value="Santiago de Surco">Santiago de Surco</option>
-												<option value="Surquillo">Surquillo</option>
-												<option value="Villa El Salvador">Villa El Salvador</option>
-												<option value="Villa María del Triunfo ">Villa María del Triunfo </option>
+											<?php echo $options ?>
 										</select>
 									</div>
 								</div>
@@ -462,75 +424,68 @@
 					<i class="fa fa-tty fa-1x black"></i></p>
 				</div>
 				<img src="img/cont_bg_new.jpg" class="mb20">
-			<div class="content2 grid_12 bg-gray-light">
-				
-				<div class="col-sm-6">
-					<address>
-                    <strong>PERÚ</strong>
-                    <br><br>
-					<ul class="fa-ul info-contact">
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <strong class="text-primary"><i class="fa fa-fax fa-lg"></i> 461-1927</strong>
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
-                            9529-47702 | 9881-63388 | 9881-63388
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <i class="fa fa-envelope fa-lg"></i>
-                            <a href="mailto:courier@limacourier.pe">courier@limacourier.pe</a>
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <i class="fa fa-map-marker"></i>
-                            Calle Tomas Ramsey # 306 Magdalena, <br>Lima, Perú<br>
-                        </li>
-                    </ul>
-                    </address>
+				<div class="content2 grid_12 bg-gray-light">
+					<div class="col-sm-6">
+						<address>
+	                    <strong>PERÚ</strong>
+	                    <br><br>
+						<ul class="fa-ul info-contact">
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <strong class="text-primary"><i class="fa fa-fax fa-lg"></i> 461-1927</strong>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
+	                            9529-47702 | 9881-63388 | 9881-63388
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-envelope fa-lg"></i>
+	                            <a href="mailto:courier@limacourier.pe">courier@limacourier.pe</a>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-map-marker"></i>
+	                            Calle Tomas Ramsey # 306 Magdalena, <br>Lima, Perú<br>
+	                        </li>
+	                    </ul>
+	                    </address>
+					</div>
+					<div class="col-sm-6">
+						<address>
+	                    <strong>COLOMBIA</strong>
+	                    <br><br>
+						<ul class="fa-ul info-contact">
+	                        <li class="text-align: -webkit-match-parent";>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <strong class="text-primary"><i class="fa fa-fax fa-lg"></i> 57 2 379 7150</strong>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
+	                            
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-envelope fa-lg"></i>
+	                            <a href="mailto:contacto@limacourier.pe">contacto@limacourier.pe</a>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-map-marker"></i>
+	                            Av. 2HN N° 54-05 A 103 <br>Cali, Colombia
+	                        </li>
+	                    </ul>
+	                    </address>
+					</div>
 				</div>
-
-				<div class="col-sm-6">
-					<address>
-                    <strong>COLOMBIA</strong>
-                    <br><br>
-					<ul class="fa-ul info-contact">
-                        <li class="text-align: -webkit-match-parent";>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <strong class="text-primary"><i class="fa fa-fax fa-lg"></i> 57 2 379 7150</strong>
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
-                            
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <i class="fa fa-envelope fa-lg"></i>
-                            <a href="mailto:contacto@limacourier.pe">contacto@limacourier.pe</a>
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check-square text-muted"></i>
-                            <i class="fa fa-map-marker"></i>
-                            Av. 2HN N° 54-05 A 103 <br>Cali, Colombia
-                        </li>
-                    </ul>
-                    </address>
-				</div>
-			</div>
-
-
-
-
-
 				<img src="img/divider.png" width="3" height="200" class="hidden">
 				<div class="clearfix"></div>
 				<footer class="text-left">
 					<div class="col-md-12" style="margin-top:3px">
 						<small>
-							<i class="fa fa-copyright fa-lg"></i> Copyright 2015 limacourier, all rights reserved
+							<i class="fa fa-copyright fa-lg"></i> Copyright <?php echo date('Y') ?> limacourier, all rights reserved
 						</small>
 						|
 						<small>
@@ -580,14 +535,14 @@
 						<li>Es responsabilidad del remitente declarar el 100% del valor declarado de su envío, esto permitirá que en caso de un siniestro se le indemnice de acuerdo con su valor, evitando pérdidas financieras a su empresa.</li>
 						<li>Si el envío comprende equipos tecnológicos o importados, es recomendable adjuntar los documentos de transporte (Guía de Remisión, Boleta o Factura, etc.) para presentarlos a las autoridades en caso de alguna inspección, a fin de evitar sanciones.</li>
 						<li>El remitente debe considerar referencias en cuanto a la dirección descrita en la guía de su envío. Además, ésta debe ser llenada con letra legible, de preferencia, letra imprenta para facilitar la lectura al Colaborador.</li>
-					</ul>					
+					</ul>
 					<strong>Deberes del Remitente</strong>
 					<ul>
 						<li>Lima Courier brinda a sus clientes el servicio de embolsado seguro para los envíos que comprendan artículos de valor.</li>
 						<li>Para los casos de paquetería, el cliente debe embalar y rotular debidamente su envío, sobre todo, cuando se trate de material frágil.</li>
 						<li>Precisar en la guía el contenido real de las unidades enviadas. Lima Courier recibe las unidades para entregarlas en las mismas condiciones al destinatario.</li>
 						<li>Embalar convenientemente para proteger los artículos enviados, sin cometer exceso de empaque.</li>
-					</ul>					
+					</ul>
 					<strong>¡Mercancías que no transportamos!</strong>
 					<ul>
 						<li>Material explosivo e inflamable.</li>
@@ -613,7 +568,7 @@
 						<li>Lima Courier no se compromete a hacer inventarios o revisión de mercadería en la recolección o en las entregas al destinatario.</li>
 						<li>Lima Courier no se compromete a clasificar u ordenar la mercadería en la entrega al destinatario.</li>
 					</ul>
-					<strong>Declaración de Protección de Datos</strong>				
+					<strong>Declaración de Protección de Datos</strong>
 					<p>
 					Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para proteger su propia información.
 					</p>
