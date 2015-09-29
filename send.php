@@ -14,10 +14,13 @@ $params = [
 	'direccion_deliver' => FILTER_SANITIZE_STRING,
 	'distrito_deliver' => FILTER_SANITIZE_STRING,
 	'telefono_deliver' => FILTER_SANITIZE_STRING,
-	'terminos' => FILTER_SANITIZE_STRING
+	'terminos' => FILTER_SANITIZE_STRING,
+	'tipo-servicio' => FILTER_SANITIZE_STRING,
 ];
 
 $values = filter_input_array(INPUT_POST, $params);
+
+$values['tipo-servicio'] = trim($values['tipo-servicio']);
 
 if (empty($values['name']))
 {
@@ -55,7 +58,11 @@ else if (!isset($values['recojo']) && !isset($values['entrega']))
 {
 	$json = ['load' => false, 'error_message' => 'Debe elegir si Paga "en el punto de recojo" ó "en el punto de entrega"'];
 }
- else if (!isset($values['terminos']))
+else if (empty($values['tipo-servicio']) || $values['tipo-servicio'] != 'LC' || $values['tipo-servicio'] != 'NAL' || $values['tipo-servicio'] != 'INAL')
+{
+	$json = ['load' => false, 'error_message' => 'Debe elegir el tipo de servicio'];
+}
+else if (!isset($values['terminos']))
 {
 	$json = ['load' => false, 'error_message' => 'Debe de aceptar los Terminos y Condiciones de Uso"'];
 }
@@ -101,7 +108,7 @@ else
 		$mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
 		// $mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
 		$mail->addAddress($values['correo'], $values['name']);
-		$mail->addReplyTo('no-reply@limacourier.com', 'Lima Courier');
+		$mail->addReplyTo($values['correo'], $values['name']);
 
 		$mail->isHTML(true);
 
@@ -109,7 +116,7 @@ else
 		$mail->Body    = $message;
 
 		if($mail->send()) {
-		    $json['success_message'] = 'Su Solicitud está haciendo Procesada';
+		    $json['success_message'] = 'La siguiente solicitud (o solicitudes) está siendo procesada - ' . $values['tipo-servicio'] . '-0000' . rand(2);
 		} else {
 			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
 		}

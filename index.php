@@ -158,112 +158,122 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 					<p>Enviar o Recoger
 					<i class="fa fa-truck fa-1x black"></i> </p>
 				</div>
-				<div class="col-xs-12 mt20">
+				<div class="col-xs-12 mt0">
 					<form id="contactForm" action="#" method="post">
-						<div class="row mb20">
-							<span>
-								<i class="fa fa-dropbox fa-4x"></i>
-								<small class="block">¿DONDE LO RECOJO?</small>
-							</span>
-						</div>
-						<div class="col-md-7">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" required>
-							</div>
-							<div class="form-group">
-								<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
-							</div>
-							<div class="row">
-								<div class="col-xs-7 col-sm-4">
-									<div class="form-group">
-										<select name="distrito" id="distrito" class="form-control">
-											<?php echo $options ?>
-										</select>
-									</div>
+						<h4 class="page-header text-left mt20">¿DONDE LO RECOJO?</h4>
+						<div class="row">
+							<div class="col-md-7">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" required>
 								</div>
-								<div class="col-xs-5 col-sm-4">
-									<div class="form-group">
-										<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
-									</div>
+								<div class="form-group">
+									<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
 								</div>
-								<div class="col-xs-12 col-sm-4">
-									<div class="form-group has-feedback">
-										<input type="text" id="date" class="form-control" value="" name="fecha" readonly>
-										<span class="form-control-feedback" aria-hidden="true">
-											<i class="fa fa-calendar"></i>
-										</span>
+								<div class="form-group">
+									<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+								</div>
+								<div class="row">
+									<div class="col-xs-7 col-sm-4">
+										<div class="form-group">
+											<select name="distrito" id="distrito" class="form-control">
+												<?php echo $options ?>
+											</select>
+										</div>
+									</div>
+									<div class="col-xs-5 col-sm-4">
+										<div class="form-group">
+											<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<div class="form-group has-feedback">
+											<input type="text" id="date" class="form-control" value="" name="fecha" readonly>
+											<span class="form-control-feedback" aria-hidden="true">
+												<i class="fa fa-calendar"></i>
+											</span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="form-group text-left">
-								<label>
-									<input type="checkbox" value="si" name="recojo" id="recojo">
-									<small>Cobrar en el punto de recojo</small>
-								</label>
-							</div>
-						</div>
-						<div class="col-md-5">
-							<div class="form-group">
-								<textarea name="descripcion" id="descripcion" class="form-control" placeholder="Escriba aqui su mensaje..." style="height:181px"></textarea>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-						<div class="row mb20">
-							<span>
-								<i class="fa fa-truck fa-4x"></i>
-								<small class="block">¿DONDE LO ENTREGO?</small>
-							</span>
-						</div>
-						<div class="col-sm-3 hidden-sm"></div>
-						<div class="col-xs-12 col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name_deliver" name="name_deliver" placeholder="Nombre y apellido completo" required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="direccion_deliver" name="direccion_deliver" placeholder="Dirección" required>
-							</div>
-							<div class="row">
-								<div class="col-xs-7">
-									<div class="form-group">
-										<select name="distrito_deliver" id="distrito_deliver" class="form-control">
-											<?php echo $options ?>
-										</select>
-									</div>
+							<div class="col-md-5">
+								<div class="form-group">
+									<textarea name="descripcion" id="descripcion" class="form-control" placeholder="Escriba aqui su mensaje..." style="height:137px"></textarea>
 								</div>
-								<div class="col-xs-5">
-									<div class="form-group">
-										<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono" required>
-									</div>
-								</div>
-							</div>
-							<div class="form-group text-left">
-								<label>
-									<input type="checkbox" value="si" name="entrega" id="entrega">
-									<small>Cobrar en el punto de entrega</small>
-								</label>
-							</div>
-							<div class="form-group text-left">
-								<div class="checkbox">
+								<div class="form-group text-left">
 									<label>
-										<input type="checkbox" value="si" name="terminos">
-										<small>Acepto los <a href="#terminos" data-toggle="modal">terminos de Uso.</a></small>
+										<input type="checkbox" value="si" name="recojo" id="recojo">
+										<small>Cobrar en el punto de recojo</small>
 									</label>
 								</div>
 							</div>
-							<div class="form-group">
-								<button class="btn btn-default"><i class="fa fa-envelope"></i> ENVIAR</button>
+						</div>
+						<h4 class="page-header text-left">¿DONDE LO ENTREGO?</h4>
+						<div class="row">
+							<div class="col-md-7">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name_deliver" name="name_deliver" placeholder="Nombre y apellido completo" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="direccion_deliver" name="direccion_deliver" placeholder="Dirección" required>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-xs-7">
+											<select name="distrito_deliver" id="distrito_deliver" class="form-control"><?php echo $options ?></select>
+										</div>
+										<div class="col-xs-5">
+											<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono" required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-sm-4">
+											<select name="tipo-servicio" id="tipo-servicio" class="form-control">
+												<option value="">-- Tipo de envío --</option>
+												<option value="LC">Local</option>
+												<option value="NAL">Nacional</option>
+												<option value="INAL">Internacional</option>
+											</select>
+										</div>
+										<div class="col-sm-8 text-left" id="content_tipo_paquete">
+											<strong class="pull-left">Va enviar:</strong>
+											<label class="radio-inline" title="Sobre con Documentos">
+												<input type="radio" name="tipo-paquete" value="1"> Documentos
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="tipo-paquete" value="2"> Paquetes
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-success alert-dismissible" role="alert" style="display:none">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<span></span>
+								</div>
 							</div>
-							<div class="alert alert-success alert-dismissible" role="alert" style="display:none">
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-								<span></span>
+							<div class="col-sm-5">
+								<div class="form-group text-left">
+									<label>
+										<input type="checkbox" value="si" name="entrega" id="entrega">
+										<small>Cobrar en el punto de entrega</small>
+									</label>
+								</div>
+								<div class="form-group text-left">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="si" name="terminos">
+											<small>Acepto los <a href="#terminos" data-toggle="modal">terminos de Uso.</a></small>
+										</label>
+									</div>
+								</div>
+								<div class="form-group text-left">
+									<button class="btn btn-default"><i class="fa fa-envelope"></i> ENVIAR</button>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 hidden-sm"></div>
 					</form>
 					<div class="clearfix"></div>
 				</div>
@@ -357,8 +367,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 				</div>
             	<ul class="list-inline social-buttons">
                     <li>
-                        <a href="https://www.facebook.com/pages/Lima-Courier/871110322931029?ref=hl
-" target="_blank" id="fb"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.facebook.com/pages/Lima-Courier/871110322931029?ref=hl" target="_blank" id="fb"><i class="fa fa-facebook fa-2x"></i></a>
                     </li>
                     <li>
                         <a href="https://twitter.com/LimaCourier" target="_blank" id="tw"><i class="fa fa-twitter fa-2x"></i></a>
@@ -510,6 +519,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 					</div>
 					<div class="modal-body">
 						<p></p>
+						<small id="alert-terminos" class="help-block hidden">* Por favor, lea nuestros términos y condiciones al pie de página.</small>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
