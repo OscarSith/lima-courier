@@ -58,7 +58,7 @@ else if (!isset($values['recojo']) && !isset($values['entrega']))
 {
 	$json = ['load' => false, 'error_message' => 'Debe elegir si Paga "en el punto de recojo" ó "en el punto de entrega"'];
 }
-else if (empty($values['tipo-servicio']) || $values['tipo-servicio'] != 'LC' || $values['tipo-servicio'] != 'NAL' || $values['tipo-servicio'] != 'INAL')
+else if (empty($values['tipo-servicio']) || ($values['tipo-servicio'] != 'LC' && $values['tipo-servicio'] != 'NAL' && $values['tipo-servicio'] != 'INAL'))
 {
 	$json = ['load' => false, 'error_message' => 'Debe elegir el tipo de servicio'];
 }
@@ -91,32 +91,42 @@ else
 				.'<p style="color:red"><b>* Cobrar en el punto '.(isset($values['recojo']) ? 'de recojo' : 'de entrega').'</b></p>';
 
 	try {
-		$mail->isSMTP();
-		$mail->SMTPAuth = true;
-		$mail->Host = 'smtp.mandrillapp.com';
-		$mail->SMTPSecure = 'tls';
-		$mail->CharSet = 'UTF-8';
-		$mail->Username = 'larriega@gmail.com';
-		$mail->Password = '';
-		$mail->Port = 587;
+		// $mail->isSMTP();
+		// $mail->SMTPAuth = true;
+		// $mail->Host = 'smtp.mandrillapp.com';
+		// $mail->SMTPSecure = 'tls';
+		// $mail->CharSet = 'UTF-8';
+		// $mail->Username = 'larriega@gmail.com';
+		// $mail->Password = '';
+		// $mail->Port = 587;
 
-		$mail->From = $values['correo'];
-		$mail->FromName = $values['name'];
-		$mail->addAddress('courier@limacourier.pe', 'Lima Courier');
-		$mail->addAddress('contacto@limacourier.pe', 'Lima Courier - Colombia');
-		$mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
-		$mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
-		// $mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
-		$mail->addAddress($values['correo'], $values['name']);
-		$mail->addReplyTo($values['correo'], $values['name']);
+		// $mail->From = $values['correo'];
+		// $mail->FromName = $values['name'];
+		// $mail->addAddress('courier@limacourier.pe', 'Lima Courier');
+		// $mail->addAddress('contacto@limacourier.pe', 'Lima Courier - Colombia');
+		// $mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
+		// $mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
+		// // $mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
+		// $mail->addAddress($values['correo'], $values['name']);
+		// $mail->addReplyTo($values['correo'], $values['name']);
 
-		$mail->isHTML(true);
+		// $mail->isHTML(true);
 
-		$mail->Subject = 'Petición de envío o recojo - Web Lima Courier';
-		$mail->Body    = $message;
+		// $mail->Subject = 'Petición de envío o recojo - Web Lima Courier';
+		// $mail->Body    = $message;
 
-		if($mail->send()) {
-		    $json['success_message'] = 'La siguiente solicitud (o solicitudes) está siendo procesada - ' . $values['tipo-servicio'] . '-0000' . rand(2);
+		// para pruebas nomás..
+		if (true) { //$mail->send()
+
+			$filename = 'cache.txt';
+			$rs = fopen($filename, 'r+');
+			$number = fread($rs, filesize($filename));
+			fclose($rs);
+			unset($rs);
+			$rs = fopen($filename, 'r+', 1);
+			fwrite($rs, $number + 1);
+
+			$json['success_message'] = 'La siguiente solicitud (o solicitudes) está siendo procesada, ' . $values['tipo-servicio'] . '-' . str_pad($number, 8, '0', STR_PAD_LEFT);
 		} else {
 			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
 		}
