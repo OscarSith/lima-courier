@@ -142,9 +142,9 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 						</div>
 					</div>
 				</div>
-				<div class="well mb0" style="padding-top: 30px;padding-bottom: 0;">
-					<small>Lima Courier es un servicio de entrega puerta a puerta seguro, rápido y confiable con un cubrimiento de más de doce (12) distritos en la ciudad de Lima Metropolitana garantizando un tiempo record en cada entrega.<br>
-					Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser más rentables, basados en el cumplimiento de metas y objetivos.
+				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0;">
+					<small>Lima Courier es un servicio de entrega puerta a puerta, seguro, rápido y confiable, con un cubrimiento en todos los distritos de Lima Metropolitana, además de todas las provincias del Perú y con cubrimiento total a nivel internacional, garantizando un tiempo record en cada entrega.<br>
+Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser más rentables, basados en el cumplimiento de metas y objetivos.
 					</small>
 				</div>
 			</div>
@@ -295,11 +295,11 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 							<table class="table table-bordered tbl">
 								<tr>
 									<td>ENTREGAS EN EL MISMO DISTRITO : </td>
-									<td>S/.10</td>
+									<td>S/.15</td>
 								</tr>
 								<tr>
 									<td>ENTREGAS ENTRE DISTRITOS: </td>
-									<td>S/.15</td>
+									<td>S/.20</td>
 								</tr>
 							</table>
 						</div>
@@ -406,17 +406,21 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 				</div>
           		<div class="mt60">
           			<ul class="list-services">
-          				<li><i class="fa fa-check fa-lg"></i> Servicio de Courier todo el día en más de doce (12) distritos de la ciudad.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Mensajería de sobres y paquetes.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Verificación domiciliaria.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Verificación laboral telefónica y/o presencial.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Reparto de recibos y encartes.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Tramites documentarios personales.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Recojo y entrega de comprobantes.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Cobranza operativa – cheques.</li>
-          				<li><i class="fa fa-check fa-lg"></i> Envío de documentos y mercancía a provincia.</li>
-          				<li><i class="fa fa-check fa-lg"></i> <strong>Transporte internacional: Maritimo, aereo, terrestre.</strong></li>
-						<li><i class="fa fa-check fa-lg"></i> <strong>Servicio de logística aduanera en importación y exportación.</strong></li>
+						<li><i class="fa fa-check fa-lg"></i> Servicio de mensajería todo el día en Lima Metropolitana.</li>
+						<li><i class="fa fa-check fa-lg"></i> Transporte de carga.</li>
+						<li><i class="fa fa-check fa-lg"></i> Mensajería de sobres y paquetes.</li>
+						<li><i class="fa fa-check fa-lg"></i> Entrega de paquetes (venta por internet)</li>
+						<li><i class="fa fa-check fa-lg"></i> Verificación domiciliaria.</li>
+						<li><i class="fa fa-check fa-lg"></i> Verificación laboral telefónica y/o presencial.</li>
+						<li><i class="fa fa-check fa-lg"></i> Reparto invitaciones masivas.</li>
+						<li><i class="fa fa-check fa-lg"></i> Embolsado y etiquetado de invitaciones.</li>
+						<li><i class="fa fa-check fa-lg"></i> Verificación y actualización de bases de datos.</li>
+						<li><i class="fa fa-check fa-lg"></i> Tramites documentarios personales locales, en provincia e internacionales.</li>
+						<li><i class="fa fa-check fa-lg"></i> Recojo y entrega de comprobantes.</li>
+						<li><i class="fa fa-check fa-lg"></i> Cobranza operativa – cheques.</li>
+						<li><i class="fa fa-check fa-lg"></i> Envío de documentos y mercancía a todo el mundo.</li>
+						<li><i class="fa fa-check fa-lg"></i> Transporte internacional: Marítimo, aéreo, terrestre.</li>
+						<li><i class="fa fa-check fa-lg"></i> Servicio de logística aduanera en importación y exportación.</li>
 
 					</ul>
 				</div>
@@ -434,7 +438,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 				</div>
 				<img src="img/cont_bg_new.jpg" class="mb20">
 				<div class="content2 grid_12 bg-gray-light">
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<address>
 	                    <strong>PERÚ</strong>
 	                    <br><br>
@@ -446,7 +450,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
-	                            9529-47702 | 9881-63388 | 9881-63388
+	                            9529-47702 | 9881-63388
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
@@ -461,7 +465,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 	                    </ul>
 	                    </address>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<address>
 	                    <strong>COLOMBIA</strong>
 	                    <br><br>
@@ -472,18 +476,44 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i> 316 456 4987
+	                            
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-envelope fa-lg"></i>
+	                            <a href="mailto:contacto@limacourier.pe">courier@limacourier.pe</a>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-map-marker"></i>
+	                            Av. 2HN N° 54-05 A 103 <br>Cali, Colombia
+	                        </li>
+	                    </ul>
+	                    </address>
+					</div>
+					<div class="col-sm-4">
+						<address>
+	                    <strong>ALEMANIA</strong>
+	                    <br><br>
+						<ul class="fa-ul info-contact">
+	                        <li class="text-align: -webkit-match-parent";>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <strong class="text-primary"><i class="fa fa-fax fa-lg"></i> </strong>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
 	                            
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-envelope fa-lg"></i>
-	                            <a href="mailto:contacto@limacourier.pe">contacto@limacourier.pe</a>
+	                            <a href="mailto:contacto@limacourier.pe">courier@limacourier.pe</a>
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-map-marker"></i>
-	                            Av. 2HN N° 54-05 A 103 <br>Cali, Colombia
 	                        </li>
 	                    </ul>
 	                    </address>
