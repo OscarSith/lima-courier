@@ -61,7 +61,7 @@ img {
 	color: #1989AC
 }
 .navbar-brand {
-	padding: 2px 0 0 
+	padding: 2px 0 0
 }
 .navigate{
 	list-style: none;
@@ -116,7 +116,7 @@ img {
 	font-weight: 400;
 }
 
-/* Slide 2 */ 
+/* Slide 2 */
 #slide2 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
@@ -295,7 +295,7 @@ ul.social-buttons li a:hover i{
 	margin: 0 4px 4px;
 	font-size: smaller;
 }
-#panel-left{
+#panel-left {
 	float: left;
 	font-size: .9em;
 	overflow: hidden;
@@ -319,4 +319,14 @@ ul.social-buttons li a:hover i{
 #content_tipo_paquete strong {
 	margin-right: 10px;
 	margin-top: 1px;
+}
+.sent-message-copy {
+	font-size: .8em;
+	font-weight: normal;
+}
+#alert-modal .modal-body {
+	font-size: .9em
+}
+address {
+	font-size: .85em;
 }

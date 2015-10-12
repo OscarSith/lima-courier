@@ -1,3 +1,5 @@
+var $selectize = $('#emails-contacts');
+
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
@@ -66,7 +68,14 @@ $('form :checkbox').on('click', function() {
     }
 });
 
-$('#contactForm').on('submit', function(e){
+$('#alert-modal').on('hidden.bs.modal', function() {
+    $('#alert-terminos').addClass('hidden');
+    $(this).find('.modal-body p').empty();
+    $('#buttons-send').addClass('hidden');
+    $('#alert-footer').removeClass('hidden');
+});
+
+$('#contactForm').on('submit', function(e) {
     e.preventDefault();
     var $this = $(this),
         data = $this.serialize(),
@@ -80,22 +89,46 @@ $('#contactForm').on('submit', function(e){
         data: data,
         type: 'post',
         dataType: 'json'
-    }).done(function(rec){
+    }).done(function(rec) {
         if (rec.load) {
-            $this[0].reset();
             $('#alert-modal').find('.modal-body p').text(rec.success_message)
                 .end().modal('show');
+            $('#alert-terminos').removeClass('hidden');
+            $('#buttons-send').removeClass('hidden');
+            $('#alert-footer').addClass('hidden');
         } else {
             alert(rec.error_message);
         }
     }).always(function(){
         $inputs.prop('disabled', false);
         $btn.text('Enviar');
-    }).error(function(x,m){
-        alert(x+' '+m);
+    }).fail(function(x,m){
+        alert(x + ' ' + m);
     });
 });
 $('#sliders-home').carousel({
   interval: 4000,
   pause: 'none'
-})
+});
+
+$selectize.selectize({
+    plugins: ['remove_button'],
+    delimiter: ',',
+    persist: false,
+    create: function(input) {
+        return {
+            value: input,
+            text: input
+        }
+    }
+});
+
+$('#btn-other-send').on('click', function() {
+    $('#alert-modal').modal('hide');
+    $('#name').focus();
+});
+$('#btn-finish').on('click', function() {
+    $('#contactForm').trigger('reset');
+    $selectize.clear();
+    $('#alert-modal').modal('hide');
+});

@@ -60,6 +60,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/pikaday.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/selectize/dist/css/selectize.default.css">
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
@@ -247,6 +248,12 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 										</div>
 									</div>
 								</div>
+								<div class="form-group text-left">
+									<label>
+										<input type="checkbox" value="si" name="entrega" id="entrega">
+										<small>Cobrar en el punto de entrega</small>
+									</label>
+								</div>
 								<div class="alert alert-success alert-dismissible" role="alert" style="display:none">
 									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
@@ -256,11 +263,10 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 							</div>
 							<div class="col-sm-5">
 								<div class="form-group text-left">
-									<label>
-										<input type="checkbox" value="si" name="entrega" id="entrega">
-										<small>Cobrar en el punto de entrega</small>
-									</label>
+									<label>Enviar una copia a otros destinatarios</label>
+									<input type="text" name="emails" id="emails-contacts" placeholder="Ejem: cliente@limacourier.com">
 								</div>
+								<hr>
 								<div class="form-group text-left">
 									<div class="checkbox">
 										<label>
@@ -477,7 +483,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i> 316 456 4987
-	                            
+
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
@@ -504,16 +510,17 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
-	                            
+								0049 5241 5248220
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-envelope fa-lg"></i>
-	                            <a href="mailto:contacto@limacourier.pe">courier@limacourier.pe</a>
+	                            <a href="mailto:kontakt@limacourier.pe">kontakt@limacourier.pe</a>
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-map-marker"></i>
+	                            Berliner str. 33330 Gütersloh
 	                        </li>
 	                    </ul>
 	                    </address>
@@ -528,7 +535,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 						</small>
 						|
 						<small>
-							<a href="#terminos" data-toggle="modal">Ver terminos de uso</a>
+							<a href="#terminos" data-toggle="modal">Ver términos de uso</a>
 						</small>
 					</div>
 				</footer>
@@ -550,8 +557,17 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					<div class="modal-body">
 						<p></p>
 						<small id="alert-terminos" class="help-block hidden">* Por favor, lea nuestros términos y condiciones al pie de página.</small>
+						<div id="buttons-send" class="hidden">
+							<hr>
+							<button class="btn btn-primary btn-sm" id="btn-other-send">
+								<i class="fa fa-envelope" style="color:#fff"></i> Hacer otro envío
+							</button>
+							<button class="btn btn-danger btn-sm pull-right" id="btn-finish">
+								<i class="fa fa-check" style="color:#fff"></i> Finalizar
+							</button>
+						</div>
 					</div>
-					<div class="modal-footer">
+					<div class="modal-footer" id="alert-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 					</div>
 				</div>
@@ -629,12 +645,13 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</script>
 	<!--End of Zopim Live Chat Script-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/moment.min.js"></script>
 	<script src="js/pikaday.js"></script>
+	<script src="bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
