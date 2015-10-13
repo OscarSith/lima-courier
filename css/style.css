@@ -210,8 +210,9 @@ footer {
 	overflow: hidden;
 }
 .list-services {
-	text-align: left;
-	list-style-type: none
+	text-align: justify;
+	list-style-type: none;
+	padding-right: 40px;
 }
 .p-service {
 	padding: 0 25px
@@ -330,3 +331,9 @@ ul.social-buttons li a:hover i{
 address {
 	font-size: .85em;
 }
+#oportunidad .modal-body {
+	height: 580px;
+	overflow: auto;
+}
+#oportunidad p {padding-left: 40px; text-align: justify;}
+#oportunidad ul {text-align: justify;}

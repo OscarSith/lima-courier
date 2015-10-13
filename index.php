@@ -143,7 +143,7 @@ $options = '<option value="Centro de Lima">Centro de Lima</option>
 						</div>
 					</div>
 				</div>
-				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0;">
+				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0; font-size: 0.99em; ">
 					<small>Lima Courier es un servicio de entrega puerta a puerta, seguro, rápido y confiable, con un cubrimiento en todos los distritos de Lima Metropolitana, además de todas las provincias del Perú y con cubrimiento total a nivel internacional, garantizando un tiempo record en cada entrega.<br>
 Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser más rentables, basados en el cumplimiento de metas y objetivos.
 					</small>
@@ -366,6 +366,12 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
             	<img src="img/somos.jpg" class="img-responsive" alt="Imagen de quienes somos">
 				<div class="mt60">
           			<ul class="list-services">
+          				<li><i></i>Nos caracterizamos por tener una filosofía que genera respuestas rápidas a sus consultas y  atendemos de inmediato los diversos servicios, debido a que entendemos el valor del tiempo para las organizaciones de hoy.</p></li>  
+ 
+						<li><i></i>Usamos diversas herramientas tecnológicas, las cuales nos permiten generar un trato altamente personalizado con nuestros socios (clientes).  Somos conscientes de que el mundo de los negocios está en constante movimiento y el manejo ágil de información es de vital importancia, por eso hemos desarrollado un software que podrá mantenernos conectados las 24 horas del día.</p></li>
+ 
+						<li><i></i>Contamos con una diversa cartera de servicios que se acomoda a cada necesidad y también somos una empresa flexible en acomodarse en torno a nuevos retos.</p></li>
+						<li><i></i>Brindamos asesoramiento y seguimiento de inicio a fin en cada uno de nuestros procesos, nos apasiona nuestro trabajo y lo reflejan cada día nuestros colaboradores.</p></li>
           				<li><i></i><strong>Visión:</strong> Ser el operador logísitico con mayor presencia operativa y comercial a nivel nacional.</li>
           				<li><i></i><strong>Misión:</strong> Brindar una solución eficiente y eficaz a las diversas necesidades de nuestros clientes, convirtiéndonos en parte fundamental en la cadena logísitica, y ofreciendo en todo momento la búsqueda de la mejora continua para todos los agentes implicados.</li>
           				<li><i></i><strong>Valores:</strong> Disponibilidad inmediata, búsqueda de la mejora contínua, eficiencia en los procesos.<br><br></li>
@@ -537,6 +543,10 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 						<small>
 							<a href="#terminos" data-toggle="modal">Ver términos de uso</a>
 						</small>
+						|
+						<small>
+							<a href="#oportunidad" data-toggle="modal">Encuentra una Oportunidad de Negocio con Nosotro</a>
+						</small>
 					</div>
 				</footer>
 			</div>
@@ -629,6 +639,47 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para proteger su propia información.
 					</p>
 					<p>Los datos que solicitamos a nuestros usuarios son con el fin de mejorar nuestro Servicio y hacer que todo proceso sea más sencillo para ellos.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="modal fade" id="oportunidad" tabindex="-1" role="dialog" aria-labelledby="oportunidadFranquicia" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="terminosCondiciones">
+						<strong>Encuentra una Oportunidad de Negocio con Nosotros</strong>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<strong>Buscas independizarte y desarrollar tu propio negocio?</strong>
+					<p>En Lima Courier tenemos un paquete diseñado para ti, hemos desarrollado una formula sencilla y atractiva para los emprendedores como tú que buscan salir adelante día a día.  El secreto está en simplificar los procesos y profesionalizar los servicios, todo esto en un ambiente 100% dinámico de respuestas urgentes.  Nuestro sistema permite a los franquiciados  alcanzar una mayor rentabilidad  en el mercado.</p>
+
+					<ul>						
+						<li>Ventajas de la Franquicia:</li>
+						<li>Negocio Consolidado (experiencia)</li>
+						<li>Seguimiento y asesoría constante.</li>
+						<li>Fácil Gestión.</li>
+						<li>Marca con fuerte proyección de crecimiento en el mercado.</li>
+						<li>Baja inversión.</li>
+					</ul>
+					<strong>SERVICIOS CENTRALES QUE OFRECEMOS:</strong>
+					<ul>
+						<li><strong>Marketing:​</strong> Fuerte inversión en campañas y medios como método habitual para una organización que gestiona la marca. Las acciones de comunicación son fundamentales y permiten reforzar la marca con el único objetivo de incrementar las ventas.</li>
+						<li><strong>I+D/Compras/Logística:</strong>​ La correcta selección de la oferta de productos, los proveedores más adecuados y el mejor servicio logístico son fundamentales para la buena marcha del negocio.</li>
+						<li><strong>Ayuda de operaciones:​</strong> Desde la central nos preocupamos en  mantener la imagen de marca y sostener la rentabilidad del negocio, hecho que sólo es posible a través de la formación de los futuros franquiciados y del reciclaje de los actuales.</li>
+						<li><strong>Expansión:</strong> Para conseguir el liderazgo es necesario mantener el nivel máximo de crecimiento nuestra  proyección es  28% anualmente como base.</p></li>
+					</ul>
+					<p>Registre acá sus datos para obtener información de cómo adquirir una franquicia Lima Courier:</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
