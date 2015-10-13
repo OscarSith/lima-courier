@@ -85,24 +85,24 @@ else
 	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 	try {
-		// $mail->isSMTP();
-		// $mail->SMTPAuth = true;
-		// $mail->Host = 'smtp.mandrillapp.com';
-		// $mail->SMTPSecure = 'tls';
-		// $mail->CharSet = 'UTF-8';
-		// $mail->Username = 'larriega@gmail.com';
-		// $mail->Password = '';
-		// $mail->Port = 587;
+		$mail->isSMTP();
+		$mail->SMTPAuth = true;
+		$mail->Host = 'smtp.mandrillapp.com';
+		$mail->SMTPSecure = 'tls';
+		$mail->CharSet = 'UTF-8';
+		$mail->Username = 'larriega@gmail.com';
+		$mail->Password = '';
+		$mail->Port = 587;
 
-		// $mail->From = $values['correo'];
-		// $mail->FromName = $values['name'];
-		// $mail->addAddress('courier@limacourier.pe', 'Lima Courier');
-		// $mail->addAddress('contacto@limacourier.pe', 'Lima Courier - Colombia');
-		// $mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
-		// $mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
-		// // $mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
-		// $mail->addAddress($values['correo'], $values['name']);
-		// $mail->addReplyTo($values['correo'], $values['name']);
+		$mail->From = $values['correo'];
+		$mail->FromName = $values['name'];
+		$mail->addAddress('courier@limacourier.pe', 'Lima Courier');
+		$mail->addAddress('contacto@limacourier.pe', 'Lima Courier - Colombia');
+		$mail->addAddress('rafaelmolina@limacourier.pe', 'Rafael Molina');
+		$mail->addAddress('alexmay@limacourier.pe', 'Alexandre May');
+		// $mail->addAddress('al.soriano.thais@gmail.com', 'Prueba de Calidad');
+		$mail->addAddress($values['correo'], $values['name']);
+		$mail->addReplyTo($values['correo'], $values['name']);
 		foreach ($valid_emails as $key) {
 			$mail->addAddress($key);
 		}
@@ -121,23 +121,23 @@ else
 			.'<strong>FECHA: '.$values['fecha'].'</strong><br>'
 			.'<b>Nombre</b>: '.$values['name'].'<br>'
 			.'<b>Correo</b>: '.$values['correo'].'<br>'
+			.'<b>País</b>: '.$values['pais'].' &nbsp; -- &nbsp; <b>Distrito</b>: '.$values['distrito'].'<br>'
 			.'<b>Dirección</b>: '.$values['direccion'].'<br>'
-			.'<b>Distrito</b>: '.$values['distrito'].'<br>'
 			.'<b>Teléfono</b>: '.$values['telefono'].'<br>'
 			.'<b>Mensaje:</b><br>'.nl2br($values['descripcion']).'<br><br>'
 			.'<h3 style="color:#1989AC">Lugar de entrega del producto</h3>'
 			.'<b>Nombre</b>: '.$values['name_deliver'].'<br>'
+			.'<b>País</b>: '.$values['pais_deliver'].' &nbsp; -- &nbsp; <b>Distrito</b>: '.$values['distrito_deliver'].'<br>'
 			.'<b>Dirección</b>: '.$values['direccion_deliver'].'<br>'
-			.'<b>Distrito</b>: '.$values['distrito_deliver'].'<br>'
 			.'<b>Teléfono</b>: '.$values['telefono_deliver'].'<br>'
 			.'<b>Va enviar</b>: '.($values['tipo-paquete'] == 1 ? 'Documentos' : 'Paquetes').'<br>'
 			.'<b>Tipo de Envío</b>: '.$values['tipo-servicio'].'<br><br>'
 			.'<p style="color:red"><b>* Cobrar en el punto '.(isset($values['recojo']) ? 'de recojo' : 'de entrega').'</b></p>'
 			.'Codigo de Servicio: ' . $codigo;
 
-		// $mail->isHTML(true);
-		// $mail->Subject = 'Petición de envío o recojo - Web Lima Courier';
-		// $mail->Body    = $message;
+		$mail->isHTML(true);
+		$mail->Subject = 'Petición de envío o recojo - Web Lima Courier';
+		$mail->Body    = $message;
 
 		// para pruebas nomás..
 		if (true) { //$mail->send()

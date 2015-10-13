@@ -192,7 +192,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 								<div class="form-group">
 									<div class="row">
 										<div class="col-xs-7 col-sm-4">
-											<select class="form-control" name="pais">
+											<select class="form-control" name="pais" id="pais">
 												<?php echo $optionsCountry ?>
 											</select>
 										</div>
@@ -237,7 +237,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 								<div class="form-group">
 									<div class="row">
 										<div class="col-sm-4">
-											<select class="form-control" name="pais_deliver">
+											<select class="form-control" name="pais_deliver" id="pais_deliver">
 												<?php echo $optionsCountry ?>
 											</select>
 										</div>
