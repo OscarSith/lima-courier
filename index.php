@@ -1,5 +1,14 @@
 <?php
-$options = '<option value="Centro de Lima">Centro de Lima</option>
+$optionsCountry = '<option value="Perú">Perú</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Colombia">Colombia</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Argentina">Argentina</option>
+<option value="Chile">Chile</option>
+<option value="Brasil">Brasil</option>
+';
+$options = '<option value="">- Seleccione Ciudad -</option>
+<option value="Centro de Lima">Centro de Lima</option>
 <option value="Ancón">Ancón</option>
 <option value="Ate">Ate</option>
 <option value="Barranco">Barranco</option>
@@ -168,30 +177,38 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 									<input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" required>
 								</div>
 								<div class="form-group">
-									<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
-								</div>
-								<div class="form-group">
 									<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
 								</div>
-								<div class="row">
-									<div class="col-xs-7 col-sm-4">
-										<div class="form-group">
-											<select name="distrito" id="distrito" class="form-control">
-												<?php echo $options ?>
-											</select>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-sm-8">
+											<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
 										</div>
-									</div>
-									<div class="col-xs-5 col-sm-4">
-										<div class="form-group">
+										<div class="col-sm-4">
 											<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
 										</div>
 									</div>
-									<div class="col-xs-12 col-sm-4">
-										<div class="form-group has-feedback">
-											<input type="text" id="date" class="form-control" value="" name="fecha" readonly>
-											<span class="form-control-feedback" aria-hidden="true">
-												<i class="fa fa-calendar"></i>
-											</span>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-xs-7 col-sm-4">
+											<select class="form-control" name="pais">
+												<?php echo $optionsCountry ?>
+											</select>
+										</div>
+										<div class="col-xs-5 col-sm-4">
+											<select name="distrito" id="distrito" class="form-control">
+												<?php echo $options ?>
+											</select>
+											<input type="text" class="form-control hidden" name="distrito" disabled id="text-distrito" placeholder="Ciudad / Distrito">
+										</div>
+										<div class="col-xs-12 col-sm-4">
+											<div class="has-feedback">
+												<input type="text" id="date" class="form-control" value="" name="fecha" readonly>
+												<span class="form-control-feedback" aria-hidden="true">
+													<i class="fa fa-calendar"></i>
+												</span>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -219,10 +236,16 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 								</div>
 								<div class="form-group">
 									<div class="row">
-										<div class="col-xs-7">
-											<select name="distrito_deliver" id="distrito_deliver" class="form-control"><?php echo $options ?></select>
+										<div class="col-sm-4">
+											<select class="form-control" name="pais_deliver">
+												<?php echo $optionsCountry ?>
+											</select>
 										</div>
-										<div class="col-xs-5">
+										<div class="col-sm-4">
+											<select name="distrito_deliver" id="distrito_deliver" class="form-control"><?php echo $options ?></select>
+											<input type="text" class="form-control hidden" name="distrito_deliver" disabled id="text-distrito-deliver" placeholder="Ciudad / Distrito">
+										</div>
+										<div class="col-sm-4">
 											<input type="text" class="form-control" id="telefono_deliver" name="telefono_deliver" placeholder="Teléfono" required>
 										</div>
 									</div>
