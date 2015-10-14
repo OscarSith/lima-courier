@@ -114,7 +114,13 @@ $('#sliders-home').carousel({
 $selectize = $('#emails-contacts').selectize({
     plugins: ['remove_button'],
     delimiter: ',',
-    persist: false
+    persist: false,
+    create: function(input) {
+        return {
+            value: input,
+            text: input
+        }
+    }
 });
 
 $('#btn-other-send').on('click', function() {
