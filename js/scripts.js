@@ -1,4 +1,4 @@
-var $selectize = $('#emails-contacts');
+var $selectize = {};
 
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
@@ -111,16 +111,10 @@ $('#sliders-home').carousel({
   pause: 'none'
 });
 
-$selectize.selectize({
+$selectize = $('#emails-contacts').selectize({
     plugins: ['remove_button'],
     delimiter: ',',
-    persist: false,
-    create: function(input) {
-        return {
-            value: input,
-            text: input
-        }
-    }
+    persist: false
 });
 
 $('#btn-other-send').on('click', function() {
@@ -129,7 +123,10 @@ $('#btn-other-send').on('click', function() {
 });
 $('#btn-finish').on('click', function() {
     $('#contactForm').trigger('reset');
-    $selectize.clear();
+    try{
+        $selectize.clear();
+    }catch(e) {
+    }
     $('#alert-modal').modal('hide');
 });
 $('#pais_deliver, #pais').on('change', function(e) {
