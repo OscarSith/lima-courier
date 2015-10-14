@@ -1,11 +1,40 @@
 <?php
 $optionsCountry = '<option value="Perú">Perú</option>
-<option value="Ecuador">Ecuador</option>
-<option value="Colombia">Colombia</option>
-<option value="Bolivia">Bolivia</option>
-<option value="Argentina">Argentina</option>
-<option value="Chile">Chile</option>
-<option value="Brasil">Brasil</option>
+<option value="Antigua y Barbuda">Antigua y Barbuda </option>
+<option value="Argentina">Argentina </option>
+<option value="Bahamas">Bahamas </option>
+<option value="Barbados">Barbados </option>
+<option value="Belice">Belice </option>
+<option value="Bolivia">Bolivia </option>
+<option value="Brasil">Brasil </option>
+<option value="Canadá">Canadá </option>
+<option value="Chile">Chile </option>
+<option value="Colombia">Colombia </option>
+<option value="Costa Rica">Costa Rica </option>
+<option value="Cuba">Cuba </option>
+<option value="Dominica">Dominica </option>
+<option value="Ecuador">Ecuador </option>
+<option value="El Salvador">El Salvador </option>
+<option value="Estados Unidos">Estados Unidos </option>
+<option value="Granada">Granada </option>
+<option value="Guatemala">Guatemala </option>
+<option value="Guyana">Guyana </option>
+<option value="Haití">Haití </option>
+<option value="Honduras">Honduras </option>
+<option value="Jamaica">Jamaica </option>
+<option value="México">México </option>
+<option value="Nicaragua">Nicaragua </option>
+<option value="Panamá">Panamá </option>
+<option value="Paraguay">Paraguay </option>
+<option value="Perú">Perú </option>
+<option value="República Dominicana">República Dominicana </option>
+<option value="San Cristóbal y Nieves">San Cristóbal y Nieves </option>
+<option value="San Vicente y las Granadinas">San Vicente y las Granadinas </option>
+<option value="Santa Lucía">Santa Lucía </option>
+<option value="Surinam">Surinam </option>
+<option value="Trinidad y Tobago">Trinidad y Tobago </option>
+<option value="Uruguay">Uruguay </option>
+<option value="Venezuela">Venezuela </option>
 ';
 $options = '<option value="">- Seleccione Ciudad -</option>
 <option value="Centro de Lima">Centro de Lima</option>
@@ -544,7 +573,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-envelope fa-lg"></i>
-	                            <a href="mailto:kontakt@limacourier.pe">kontakt@limacourier.pe</a>
+	                            <a href="mailto:germanycontact@limacourier.pe">germanycontact@limacourier.pe</a>
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
