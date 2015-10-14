@@ -98,7 +98,7 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/pikaday.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/selectize/dist/css/selectize.default.css">
+	<link rel="stylesheet" type="text/css" href="css/selectize.default.css">
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
