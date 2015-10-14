@@ -176,9 +176,9 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 						<div class="item">
 							<img src="img/slider/banner_slider-6.jpg" alt="...">
 						</div>
-						<div class="item">
+						<!-- <div class="item">
 							<img src="img/slider/banner_slider-8.jpg" alt="...">
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0; font-size: 0.99em; ">
@@ -418,10 +418,10 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
             	<img src="img/somos.jpg" class="img-responsive" alt="Imagen de quienes somos">
 				<div class="mt60">
           			<ul class="list-services">
-          				<li><i></i>Nos caracterizamos por tener una filosofía que genera respuestas rápidas a sus consultas y  atendemos de inmediato los diversos servicios, debido a que entendemos el valor del tiempo para las organizaciones de hoy.</p></li>  
- 
+          				<li><i></i>Nos caracterizamos por tener una filosofía que genera respuestas rápidas a sus consultas y  atendemos de inmediato los diversos servicios, debido a que entendemos el valor del tiempo para las organizaciones de hoy.</p></li>
+
 						<li><i></i>Usamos diversas herramientas tecnológicas, las cuales nos permiten generar un trato altamente personalizado con nuestros socios (clientes).  Somos conscientes de que el mundo de los negocios está en constante movimiento y el manejo ágil de información es de vital importancia, por eso hemos desarrollado un software que podrá mantenernos conectados las 24 horas del día.</p></li>
- 
+
 						<li><i></i>Contamos con una diversa cartera de servicios que se acomoda a cada necesidad y también somos una empresa flexible en acomodarse en torno a nuevos retos.</p></li>
 						<li><i></i>Brindamos asesoramiento y seguimiento de inicio a fin en cada uno de nuestros procesos, nos apasiona nuestro trabajo y lo reflejan cada día nuestros colaboradores.</p></li>
           				<li><i></i><strong>Visión:</strong> Ser el operador logísitico con mayor presencia operativa y comercial a nivel nacional.</li>
@@ -716,7 +716,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					<strong>Buscas independizarte y desarrollar tu propio negocio?</strong>
 					<p>En Lima Courier tenemos un paquete diseñado para ti, hemos desarrollado una formula sencilla y atractiva para los emprendedores como tú que buscan salir adelante día a día.  El secreto está en simplificar los procesos y profesionalizar los servicios, todo esto en un ambiente 100% dinámico de respuestas urgentes.  Nuestro sistema permite a los franquiciados  alcanzar una mayor rentabilidad  en el mercado.</p>
 
-					<ul>						
+					<ul>
 						<li>Ventajas de la Franquicia:</li>
 						<li>Negocio Consolidado (experiencia)</li>
 						<li>Seguimiento y asesoría constante.</li>
@@ -748,13 +748,13 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</script>
 	<!--End of Zopim Live Chat Script-->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/moment.min.js"></script>
 	<script src="js/pikaday.js"></script>
-	<script src="bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+	<script src="js/selectize.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

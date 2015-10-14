@@ -140,7 +140,7 @@ else
 		$mail->Body    = $message;
 
 		// para pruebas nomás..
-		if (true) { //$mail->send()
+		if ($mail->send()) {
 			$json['success_message'] = 'La siguiente solicitud (o solicitudes) está siendo procesada, ' . $codigo;
 		} else {
 			$json = ['load' => true, 'error_message' => 'El mensaje no pudo ser enviado, intentelo de nuevo, error: '.$mail->ErrorInfo];
