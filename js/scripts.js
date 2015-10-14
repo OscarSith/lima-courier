@@ -99,10 +99,10 @@ $('#contactForm').on('submit', function(e) {
         } else {
             alert(rec.error_message);
         }
-    }).always(function(){
+    }).always(function() {
         $inputs.prop('disabled', false);
         $btn.text('Enviar');
-    }).fail(function(x,m){
+    }).fail(function(x,m) {
         alert(x + ' ' + m);
     });
 });
@@ -131,4 +131,12 @@ $('#btn-finish').on('click', function() {
     $('#contactForm').trigger('reset');
     $selectize.clear();
     $('#alert-modal').modal('hide');
+});
+$('#pais_deliver, #pais').on('change', function(e) {
+    var $this = $(this);
+    if ($this.val() != 'Perú') {
+        $this.parent().next().children().first().addClass('hidden').next().removeClass('hidden').prop('disabled', false);
+    } else {
+        $this.parent().next().children().first().removeClass('hidden').next().addClass('hidden').prop('disabled', true);
+    }
 });
