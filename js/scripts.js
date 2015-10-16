@@ -106,6 +106,30 @@ $('#contactForm').on('submit', function(e) {
         alert(x + ' ' + m);
     });
 });
+$('#frm-franquicia').on('submit', function(e) {
+    e.preventDefault();
+    var $this = $(this),
+        data = $this.serialize(),
+        $inputs = $this.find(':input');
+
+    $inputs.prop('disabled', true);
+    $.ajax({
+        url: 'send-franchise.php',
+        type: 'post',
+        data: data,
+        dataType: 'json'
+    }).done(function(rec) {
+        if (rec.load) {
+            $this.closest('.modal').modal('hide');
+            alert(rec.success_message);
+        } else {
+            alert(rec.error_message);
+        }
+    }).always(function() {
+        $inputs.prop('disabled', false);
+    });
+});
+
 $('#sliders-home').carousel({
   interval: 4000,
   pause: 'none'
@@ -131,7 +155,7 @@ $('#btn-finish').on('click', function() {
     $('#contactForm').trigger('reset');
     try{
         $selectize.clear();
-    }catch(e) {
+    } catch(e) {
     }
     $('#alert-modal').modal('hide');
 });

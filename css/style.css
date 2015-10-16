@@ -334,6 +334,13 @@ address {
 #oportunidad .modal-body {
 	height: 580px;
 	overflow: auto;
+	font-size: .85em
 }
 #oportunidad p {padding-left: 40px; text-align: justify;}
 #oportunidad ul {text-align: justify;}
+#frm-franquicia {
+	background-color: #F5F5F5;
+	border-radius: 4px;
+	border: 2px solid #d1d1d1;
+	padding: 10px 15px;
+}

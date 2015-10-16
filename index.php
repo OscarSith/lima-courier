@@ -714,8 +714,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 				</div>
 				<div class="modal-body">
 					<strong>Buscas independizarte y desarrollar tu propio negocio?</strong>
-					<p>En Lima Courier tenemos un paquete diseñado para ti, hemos desarrollado una formula sencilla y atractiva para los emprendedores como tú que buscan salir adelante día a día.  El secreto está en simplificar los procesos y profesionalizar los servicios, todo esto en un ambiente 100% dinámico de respuestas urgentes.  Nuestro sistema permite a los franquiciados  alcanzar una mayor rentabilidad  en el mercado.</p>
-
+					<p>En Lima Courier tenemos un paquete diseñado para ti, hemos desarrollado una formula sencilla y atractiva para los emprendedores como tú que buscan salir adelante día a día. El secreto está en simplificar los procesos y profesionalizar los servicios, todo esto en un ambiente 100% dinámico de respuestas urgentes. Nuestro sistema permite a los franquiciados alcanzar una mayor rentabilidad en el mercado.</p>
 					<ul>
 						<li>Ventajas de la Franquicia:</li>
 						<li>Negocio Consolidado (experiencia)</li>
@@ -726,12 +725,49 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					</ul>
 					<strong>SERVICIOS CENTRALES QUE OFRECEMOS:</strong>
 					<ul>
-						<li><strong>Marketing:​</strong> Fuerte inversión en campañas y medios como método habitual para una organización que gestiona la marca. Las acciones de comunicación son fundamentales y permiten reforzar la marca con el único objetivo de incrementar las ventas.</li>
-						<li><strong>I+D/Compras/Logística:</strong>​ La correcta selección de la oferta de productos, los proveedores más adecuados y el mejor servicio logístico son fundamentales para la buena marcha del negocio.</li>
-						<li><strong>Ayuda de operaciones:​</strong> Desde la central nos preocupamos en  mantener la imagen de marca y sostener la rentabilidad del negocio, hecho que sólo es posible a través de la formación de los futuros franquiciados y del reciclaje de los actuales.</li>
-						<li><strong>Expansión:</strong> Para conseguir el liderazgo es necesario mantener el nivel máximo de crecimiento nuestra  proyección es  28% anualmente como base.</p></li>
+						<li><strong>Marketing:​</strong> Fuerte inversión en campañas y medios como método habitual para una organización que gestiona la marca. Las acciones de comunicación son fundamentales y permiten reforzar la marca con el único objetivo de incrementar las ventas.</li>
+						<li><strong>I+D/Compras/Logística:</strong>​ La correcta selección de la oferta de productos, los proveedores más adecuados y el mejor servicio logístico son fundamentales para la buena marcha del negocio.</li>
+						<li><strong>Ayuda de operaciones:​</strong> Desde la central nos preocupamos en  mantener la imagen de marca y sostener la rentabilidad del negocio, hecho que sólo es posible a través de la formación de los futuros franquiciados y del reciclaje de los actuales.</li>
+						<li><strong>Expansión:</strong> Para conseguir el liderazgo es necesario mantener el nivel máximo de crecimiento nuestra  proyección es 28% anualmente como base.</p></li>
 					</ul>
 					<p>Registre acá sus datos para obtener información de cómo adquirir una franquicia Lima Courier:</p>
+					<form id="frm-franquicia" class="form-horizontal col-sm-8 col-sm-offset-2">
+						<div class="form-group">
+							<label for="nombre" class="control-label col-sm-3">Nombre</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="nombres">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="control-label col-sm-3">Correo</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" name="correo">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="control-label col-sm-3">Teléfono</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="telefono">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-4">
+								<select class="form-control" name="pais">
+									<?php echo $optionsCountry ?>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="estado" placeholder="Estado">
+							</div>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="cuidad" placeholder="Ciudad">
+							</div>
+						</div>
+						<div class="text-right">
+							<hr>
+							<button class="btn btn-primary"><i class="fa fa-send" style="color: #fff;"></i> Enviar</button>
+						</div>
+					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
