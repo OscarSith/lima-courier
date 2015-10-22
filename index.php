@@ -46,6 +46,7 @@ $optionsCountry = '<option value="Perú">Perú</option>
 <option value="Trinidad y Tobago">Trinidad y Tobago </option>
 <option value="Uruguay">Uruguay </option>
 <option value="Venezuela">Venezuela </option>
+<option value="Other countries">Other countries</option>
 ';
 $options = '<option value="">- Seleccione Ciudad -</option>
 <option value="Centro de Lima">Centro de Lima</option>
@@ -179,17 +180,14 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 							<img src="img/slider/banner_slider-3.jpg" alt="...">
 						</div>
 						<div class="item">
-							<img src="img/slider/banner_slider-4.jpg" alt="...">
-						</div>
-						<div class="item">
 							<img src="img/slider/banner_slider-5.jpg" alt="...">
 						</div>
 						<div class="item">
 							<img src="img/slider/banner_slider-6.jpg" alt="...">
 						</div>
-						<!-- <div class="item">
+						<!-- div class="item">
 							<img src="img/slider/banner_slider-8.jpg" alt="...">
-						</div> -->
+						</div -->
 					</div>
 				</div>
 				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0; font-size: 0.99em; ">
@@ -349,7 +347,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 			</div>
 		</div>
 	</section>
-	<section class="slide" id="tarifario" data-slide="3">
+	<!-- <section class="slide" id="tarifario" data-slide="3">
 		<div class="container clearfix">
 			<div class="h56 bg-gray-light"></div>
 			<div class="content grid_12 bg-white">
@@ -417,7 +415,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<section class="slide" id="nosotros" data-slide="4">
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
@@ -513,7 +511,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 				</div>
 				<img src="img/cont_bg_new.jpg" class="mb20">
 				<div class="content2 grid_12 bg-gray-light">
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<address>
 	                    <strong>PERÚ</strong>
 	                    <br><br>
@@ -540,7 +538,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                    </ul>
 	                    </address>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<address>
 	                    <strong>COLOMBIA</strong>
 	                    <br><br>
@@ -567,7 +565,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                    </ul>
 	                    </address>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<address>
 	                    <strong>ALEMANIA</strong>
 	                    <br><br>
@@ -590,6 +588,33 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-map-marker"></i>
 	                            Berliner str. 33330 Gütersloh
+	                        </li>
+	                    </ul>
+	                    </address>
+					</div>
+					<div class="col-sm-3">
+						<address>
+	                    <strong>EEUU</strong>
+	                    <br><br>
+						<ul class="fa-ul info-contact">
+	                        <li class="text-align: -webkit-match-parent";>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <strong class="text-primary"><i class="fa fa-fax fa-lg"></i>(305) 277.1361</strong>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
+								1 800 44212699
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-envelope fa-lg"></i>
+	                            <a href="mailto:germanycontact@limacourier.pe">germanycontact@limacourier.pe</a>
+	                        </li>
+	                        <li>
+	                            <i class="fa-li fa fa-check-square text-muted"></i>
+	                            <i class="fa fa-map-marker"></i>
+	                            2300 SW Coral Way Suite 300 Miami, FL - 39117
 	                        </li>
 	                    </ul>
 	                    </address>
