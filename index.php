@@ -241,12 +241,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 											<input type="text" class="form-control hidden" name="distrito" disabled id="text-distrito" placeholder="Ciudad / Distrito">
 										</div>
 										<div class="col-xs-12 col-sm-4">
-											<div class="has-feedback">
-												<input type="text" id="date" class="form-control" value="" name="fecha" readonly>
-												<span class="form-control-feedback" aria-hidden="true">
-													<i class="fa fa-calendar"></i>
-												</span>
-											</div>
+											<input type="text" id="date" class="form-control" value="" name="fecha" readonly>
 										</div>
 									</div>
 								</div>
@@ -347,75 +342,79 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 			</div>
 		</div>
 	</section>
-	<!-- <section class="slide" id="tarifario" data-slide="3">
+	<section class="slide" id="tarifario" data-slide="3">
 		<div class="container clearfix">
 			<div class="h56 bg-gray-light"></div>
 			<div class="content grid_12 bg-white">
-				<div class=" middle-panel">
-					<p>Tarifario
-					<i class="fa fa-barcode fa-1x black"></i></p>
+				<div class="middle-panel">
+					<p>Encuentra una Oportunidad de Negocio con Nosotros</p>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="col-sm-3 hidden-sm"></div>
-						<div class="col-xs-12 col-md-6 mb20">
-							<table class="table table-bordered tbl">
-								<tr>
-									<td>ENTREGAS EN EL MISMO DISTRITO : </td>
-									<td>S/.15</td>
-								</tr>
-								<tr>
-									<td>ENTREGAS ENTRE DISTRITOS: </td>
-									<td>S/.20</td>
-								</tr>
-							</table>
+						<div class="col-sm-12">
+							<h4 class="page-header text-left">Buscas independizarte y desarrollar tu propio negocio?</h4>
 						</div>
-						<div class="col-sm-3 hidden-sm"></div>
+						<div class="col-sm-12 text-left small">
+							<p>En Lima Courier tenemos un paquete diseñado para ti, hemos desarrollado una formula sencilla y atractiva para los emprendedores como tú que buscan salir adelante día a día. El secreto está en simplificar los procesos y profesionalizar los servicios, todo esto en un ambiente 100% dinámico de respuestas urgentes. Nuestro sistema permite a los franquiciados alcanzar una mayor rentabilidad en el mercado.</p>
+							<ul>
+								<li>Ventajas de la Franquicia:</li>
+								<li>Negocio Consolidado (experiencia)</li>
+								<li>Seguimiento y asesoría constante.</li>
+								<li>Fácil Gestión.</li>
+								<li>Marca con fuerte proyección de crecimiento en el mercado.</li>
+								<li>Baja inversión.</li>
+							</ul>
+							<strong>SERVICIOS CENTRALES QUE OFRECEMOS:</strong>
+							<ul>
+								<li><strong>Marketing:​</strong> Fuerte inversión en campañas y medios como método habitual para una organización que gestiona la marca. Las acciones de comunicación son fundamentales y permiten reforzar la marca con el único objetivo de incrementar las ventas.</li>
+								<li><strong>I+D/Compras/Logística:</strong>​ La correcta selección de la oferta de productos, los proveedores más adecuados y el mejor servicio logístico son fundamentales para la buena marcha del negocio.</li>
+								<li><strong>Ayuda de operaciones:​</strong> Desde la central nos preocupamos en  mantener la imagen de marca y sostener la rentabilidad del negocio, hecho que sólo es posible a través de la formación de los futuros franquiciados y del reciclaje de los actuales.</li>
+								<li><strong>Expansión:</strong> Para conseguir el liderazgo es necesario mantener el nivel máximo de crecimiento nuestra proyección es 28% anualmente como base.</li>
+							</ul>
+							<p>Registre acá sus datos para obtener información de cómo adquirir una franquicia Lima Courier:</p>
+							<form id="frm-franquicia" class="form-horizontal col-sm-8 col-sm-offset-2">
+								<div class="form-group">
+									<label for="nombre" class="control-label col-sm-3">Nombre</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" name="nombres">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="control-label col-sm-3">Correo</label>
+									<div class="col-sm-9">
+										<input type="email" class="form-control" name="correo">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="control-label col-sm-3">Teléfono</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="telefono">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-4">
+										<select class="form-control" name="pais">
+											<?php echo $optionsCountry ?>
+										</select>
+									</div>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="estado" placeholder="Estado">
+									</div>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="cuidad" placeholder="Ciudad">
+									</div>
+								</div>
+								<div class="text-right">
+									<hr>
+									<button class="btn btn-primary"><i class="fa fa-send" style="color: #fff;"></i> Enviar</button>
+								</div>
+							</form>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<span>
-						<i class="fa fa-map-marker fa-4x"></i>
-						<small class="block">¿DONDE LO ENTREGO?</small>
-					</span>
-				</div>
-				<div class="col-xs-12">
-					<table id="tabla4" class="table table-bordered table-hover tbl">
-						<tr>
-							<td>SAN ISIDRO</td>
-							<td>SAN BORJA</td>
-							<td>BREÑA</td>
-						</tr>
-						<tr>
-							<td>MIRAFLORES </td>
-							<td>SURCO</td>
-							<td>PUEBLO LIBRE</td>
-						</tr>
-						<tr>
-							<td>SAN MIGUEL</td>
-							<td>CERCADO DE LIMA</td>
-							<td>LA VICTORIA</td>
-						</tr>
-						<tr>
-							<td>BARRANCO </td>
-							<td>LINCE</td>
-							<td>SAN LUIS</td>
-						</tr>
-						<tr>
-							<td>MAGDALENA DEL MAR</td>
-							<td>JESÚS MARÍA</td>
-							<td>SURQUILLO</td>
-						</tr>
-						<tr>
-							<td>SANTA ANITA</td>
-							<td>LA MOLINA</td>
-							<td>OTROS</td>
-						</tr>
-					</table>
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 	<section class="slide" id="nosotros" data-slide="4">
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
@@ -453,7 +452,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 			</div>
 		</div>
 	</section>
-    <section class="slide" id="unete" data-slide="5">
+	<section class="slide" id="unete" data-slide="5">
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
 			<div class="content bg-gray-light grid_12">
@@ -468,7 +467,6 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 			</div>
 		</div>
 	</section>
-
 	<section class="slide" id="servicios" data-slide="6">
 		<div class="container">
 			<div class="h56 bg-white"></div>
@@ -500,8 +498,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 			</div>
 		</div>
 	</section>
-
-    <section class="slide" id="contacto" data-slide="7">
+	<section class="slide" id="contacto" data-slide="7">
 		<div class="container clearfix">
 			<div class="h56 bg-white"></div>
 			<div class="content grid_12 bg-gray-light">
@@ -631,10 +628,6 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 						<small>
 							<a href="#terminos" data-toggle="modal">Ver términos de uso</a>
 						</small>
-						|
-						<small>
-							<a href="#oportunidad" data-toggle="modal">Encuentra una Oportunidad de Negocio con Nosotro</a>
-						</small>
 					</div>
 				</footer>
 			</div>
@@ -727,83 +720,6 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para proteger su propia información.
 					</p>
 					<p>Los datos que solicitamos a nuestros usuarios son con el fin de mejorar nuestro Servicio y hacer que todo proceso sea más sencillo para ellos.</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="modal fade" id="oportunidad" tabindex="-1" role="dialog" aria-labelledby="oportunidadFranquicia" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<h4 class="modal-title" id="terminosCondiciones">
-						<strong>Encuentra una Oportunidad de Negocio con Nosotros</strong>
-					</h4>
-				</div>
-				<div class="modal-body">
-					<strong>Buscas independizarte y desarrollar tu propio negocio?</strong>
-					<p>En Lima Courier tenemos un paquete diseñado para ti, hemos desarrollado una formula sencilla y atractiva para los emprendedores como tú que buscan salir adelante día a día. El secreto está en simplificar los procesos y profesionalizar los servicios, todo esto en un ambiente 100% dinámico de respuestas urgentes. Nuestro sistema permite a los franquiciados alcanzar una mayor rentabilidad en el mercado.</p>
-					<ul>
-						<li>Ventajas de la Franquicia:</li>
-						<li>Negocio Consolidado (experiencia)</li>
-						<li>Seguimiento y asesoría constante.</li>
-						<li>Fácil Gestión.</li>
-						<li>Marca con fuerte proyección de crecimiento en el mercado.</li>
-						<li>Baja inversión.</li>
-					</ul>
-					<strong>SERVICIOS CENTRALES QUE OFRECEMOS:</strong>
-					<ul>
-						<li><strong>Marketing:​</strong> Fuerte inversión en campañas y medios como método habitual para una organización que gestiona la marca. Las acciones de comunicación son fundamentales y permiten reforzar la marca con el único objetivo de incrementar las ventas.</li>
-						<li><strong>I+D/Compras/Logística:</strong>​ La correcta selección de la oferta de productos, los proveedores más adecuados y el mejor servicio logístico son fundamentales para la buena marcha del negocio.</li>
-						<li><strong>Ayuda de operaciones:​</strong> Desde la central nos preocupamos en  mantener la imagen de marca y sostener la rentabilidad del negocio, hecho que sólo es posible a través de la formación de los futuros franquiciados y del reciclaje de los actuales.</li>
-						<li><strong>Expansión:</strong> Para conseguir el liderazgo es necesario mantener el nivel máximo de crecimiento nuestra  proyección es 28% anualmente como base.</p></li>
-					</ul>
-					<p>Registre acá sus datos para obtener información de cómo adquirir una franquicia Lima Courier:</p>
-					<form id="frm-franquicia" class="form-horizontal col-sm-8 col-sm-offset-2">
-						<div class="form-group">
-							<label for="nombre" class="control-label col-sm-3">Nombre</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" name="nombres">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="control-label col-sm-3">Correo</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control" name="correo">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="control-label col-sm-3">Teléfono</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" name="telefono">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-4">
-								<select class="form-control" name="pais">
-									<?php echo $optionsCountry ?>
-								</select>
-							</div>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" name="estado" placeholder="Estado">
-							</div>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" name="cuidad" placeholder="Ciudad">
-							</div>
-						</div>
-						<div class="text-right">
-							<hr>
-							<button class="btn btn-primary"><i class="fa fa-send" style="color: #fff;"></i> Enviar</button>
-						</div>
-					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
