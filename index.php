@@ -185,9 +185,18 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 						<div class="item">
 							<img src="img/slider/banner_slider-6.jpg" alt="...">
 						</div>
-						<!-- div class="item">
+						<div class="item">
 							<img src="img/slider/banner_slider-8.jpg" alt="...">
-						</div -->
+						</div>
+						<div class="item">
+							<img src="img/slider/banner_slider-9.jpg" alt="...">
+						</div>
+						<div class="item">
+							<img src="img/slider/banner_slider-10.jpg" alt="...">
+						</div>
+						<div class="item">
+							<img src="img/slider/banner_slider-11.jpg" alt="...">
+						</div>
 					</div>
 				</div>
 				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0; font-size: 0.99em; ">
@@ -510,7 +519,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 				<div class="content2 grid_12 bg-gray-light">
 					<div class="col-sm-3">
 						<address>
-	                    <strong>PERÚ</strong>
+	                    <strong><img src="img/peru.jpg"> PERÚ</strong>
 	                    <br><br>
 						<ul class="fa-ul info-contact">
 	                        <li>
@@ -537,7 +546,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					</div>
 					<div class="col-sm-3">
 						<address>
-	                    <strong>COLOMBIA</strong>
+	                    <strong><img src="img/colombia.jpg"> COLOMBIA</strong>
 	                    <br><br>
 						<ul class="fa-ul info-contact">
 	                        <li class="text-align: -webkit-match-parent";>
@@ -564,7 +573,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					</div>
 					<div class="col-sm-3">
 						<address>
-	                    <strong>ALEMANIA</strong>
+	                    <strong><img src="img/alemania.jpg"> GERMANY</strong>
 	                    <br><br>
 						<ul class="fa-ul info-contact">
 	                        <li class="text-align: -webkit-match-parent";>
@@ -591,7 +600,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					</div>
 					<div class="col-sm-3">
 						<address>
-	                    <strong>EEUU</strong>
+	                    <strong><img src="img/usa.gif"> EEUU</strong>
 	                    <br><br>
 						<ul class="fa-ul info-contact">
 	                        <li class="text-align: -webkit-match-parent";>
