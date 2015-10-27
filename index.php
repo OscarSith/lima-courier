@@ -615,7 +615,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-envelope fa-lg"></i>
-	                            <a href="mailto:germanycontact@limacourier.pe">germanycontact@limacourier.pe</a>
+	                            <a href="mailto:courier@limacourier.pe">courier@limacourier.pe</a>
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
