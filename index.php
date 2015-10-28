@@ -682,21 +682,39 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 						<span aria-hidden="true">&times;</span>
 					</button>
 					<h4 class="modal-title" id="terminosCondiciones">
-						<strong>Términos y Condiciones de Servicio</strong>
+						<strong>TERMINOS Y CONDICIONES DEL SERVICIO</strong>
 					</h4>
 				</div>
 				<div class="modal-body">
 					<strong>Recomendaciones</strong>
 					<ul>
-						<li>Es responsabilidad del remitente declarar el 100% del valor declarado de su envío, esto permitirá que en caso de un siniestro se le indemnice de acuerdo con su valor, evitando pérdidas financieras a su empresa.</li>
-						<li>Si el envío comprende equipos tecnológicos o importados, es recomendable adjuntar los documentos de transporte (Guía de Remisión, Boleta o Factura, etc.) para presentarlos a las autoridades en caso de alguna inspección, a fin de evitar sanciones.</li>
-						<li>El remitente debe considerar referencias en cuanto a la dirección descrita en la guía de su envío. Además, ésta debe ser llenada con letra legible, de preferencia, letra imprenta para facilitar la lectura al Colaborador.</li>
+						<li>Es responsabilidad del remitente declarar el 100% del valor declarado de su envío, esto permitirá que en caso 
+
+de un siniestro se le indemnice de acuerdo con su valor, si es el caso, evitando pérdidas financieras a su 
+
+empresa.</li>
+						<li>Si el envío comprende equipos tecnológicos o importados, es recomendable adjuntar los documentos de 
+
+transporte (Guía de Remisión, Boleta o Factura, etc.) para presentarlos a las autoridades en caso de alguna 
+
+inspección, a fin de evitar sanciones.</li>
+						<li>El remitente debe considerar referencias en cuanto a la dirección descrita en la guía o declaración jurada de 
+
+su envío. Además, ésta debe ser llenada con letra legible, de preferencia, letra imprenta para facilitar la lectura 
+
+al Colaborador.</li>
 					</ul>
 					<strong>Deberes del Remitente</strong>
 					<ul>
-						<li>Lima Courier brinda a sus clientes el servicio de embolsado seguro para los envíos que comprendan artículos de valor.</li>
-						<li>Para los casos de paquetería, el cliente debe embalar y rotular debidamente su envío, sobre todo, cuando se trate de material frágil.</li>
-						<li>Precisar en la guía el contenido real de las unidades enviadas. Lima Courier recibe las unidades para entregarlas en las mismas condiciones al destinatario.</li>
+						<li>Lima Courier brinda a sus clientes el servicio de embolsado seguro para los envíos que comprendan artículos 
+
+de valor.</li>
+						<li>Para los casos de paquetería, el cliente debe embalar y rotular debidamente su envío, sobre todo, cuando se 
+
+trate de material frágil.</li>
+						<li>Precisar en la guía o declaración jurada el contenido real de las unidades enviadas. Lima Courier recibe las
+
+unidades para entregarlas en las mismas condiciones al destinatario.</li>
 						<li>Embalar convenientemente para proteger los artículos enviados, sin cometer exceso de empaque.</li>
 					</ul>
 					<strong>¡Mercancías que no transportamos!</strong>
@@ -717,7 +735,35 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 					</ul>
 					<strong>Tener en cuenta</strong>
 					<ul>
-						<li>En caso de siniestro, el reclamo deberá realizarse en un máximo de tres (03) días después de informado el suceso, para ello, se deberán adjuntar los documentos solicitados y seguir el proceso que se indique.</li>
+						<li>En caso de siniestro, el reclamo deberá realizarse en un máximo de tres (03) días después de informado el
+
+suceso, para ello, se deberán adjuntar los documentos solicitados y seguir el proceso que se indique.</li>
+						<li>En ningún caso Lima Courier Corporación SAC asume o asumiría pagos por impuestos, sobrecostos u 
+
+obligaciones similares propias de un envío internacional, interprovincial o local ya sea solicitado por Aduanas 
+
+a nivel nacional o internacional, SUNAT, o agente regulador que competa o no al tipo de envío realizado.</li>
+						<li>Lima Courier Corporación SAC ofrece, solamente, el servicio de “traslado o transporte” de documentos, 
+
+sobres, paquetes y carga y por lo tanto no asume obligaciones económicas con terceros, siendo estas 
+
+obligaciones propias del solicitante ya sea con una entidad como superintendencias o servicio nacional de 
+
+aduanas en el país de destino o agentes reguladores.</li>
+						<li>Lima Courier Corporación SAC no realiza reembolsos por envíos que han sido enrutados o que están
+
+cercanos a su lugar de destino y tampoco asume obligación alguna si es que hay imprevistos como cambio de 
+
+domicilio del destinatario, no ubicación en general del destinatario, mala consignación de la dirección o datos 
+
+del remitente o destinatario siendo esto obligación directa del solicitante del servicio. Tampoco es de 
+
+competencia de Lima Courier Corporación asumir costos o gastos por eventos fortuitos como pérdida de la 
+
+mercancía por mala praxis de terceros, o por eventos fortuitos de la naturaleza (huaicos, tormentas, 
+
+terremotos, incendios y similares).</li>
+
 					</ul>
 					<strong>Restricciones</strong>
 					<ul>
@@ -725,10 +771,24 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 						<li>Lima Courier no se compromete a clasificar u ordenar la mercadería en la entrega al destinatario.</li>
 					</ul>
 					<strong>Declaración de Protección de Datos</strong>
-					<p>
-					Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para proteger su propia información.
-					</p>
-					<p>Los datos que solicitamos a nuestros usuarios son con el fin de mejorar nuestro Servicio y hacer que todo proceso sea más sencillo para ellos.</p>
+					<ul>
+						<li>Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta 
+
+confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y 
+
+demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser 
+
+de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni 
+
+conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo 
+
+sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para 
+
+proteger su propia información.
+					</li>
+					<li>Los datos que solicitamos a nuestros usuarios son con el fin de mejorar nuestro Servicio y hacer que todo 
+
+proceso sea más sencillo para ellos.</li>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
