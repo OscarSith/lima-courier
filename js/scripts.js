@@ -57,7 +57,7 @@ $('#fixed-contact-rigth').on(events, function(e){
     }
 });
 
-$('form :checkbox').on('click', function() {
+$('#recojo, #entrega').on('click', function() {
     var $this = $(this),
         name = $this.attr('name');
 
@@ -79,7 +79,7 @@ $('#contactForm').on('submit', function(e) {
     e.preventDefault();
     var $this = $(this),
         data = $this.serialize(),
-        $inputs = $this.find(':input'),
+        $inputs = $this.find(':input:not(:disabled)'),
         $btn = $this.find('#btn-send');
 
     $inputs.prop('disabled', true);
