@@ -167,40 +167,6 @@ img {
 	color: #000 !important
 }
 
-@media (min-width: 1200px) {
-	.container {
-		width: 1000px
-	}
-}
-@media (min-width: 992px) {
-	.navbar-default .navbar-nav>li>a {
-		font-size: .8em
-	}
-}
-
-/* Mobile */
-@media screen and (max-width: 480px) {
-
-	.slide{
-		background-attachment: fixed;
-		width:100%;
-		position: relative;
-	}
-	#tabla5 {
-		width: 100%
-	}
-}
-
-@media screen and (max-width: 767px) {
-	#logo {
-		margin-left: 15px;
-		width: 80px;
-	}
-	#slide7 address {
-		text-align: left !important;
-	}
-}
-
 footer {
 	background-color: #333;
 	color: #FFF;
@@ -343,4 +309,50 @@ address {
 	border-radius: 4px;
 	border: 2px solid #d1d1d1;
 	padding: 10px 15px;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1000px
+	}
+}
+@media (min-width: 992px) {
+	.navbar-default .navbar-nav>li>a {
+		font-size: .8em
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+	.slide{
+		background-attachment: fixed;
+		width:100%;
+		position: relative;
+	}
+	#tabla5 {
+		width: 100%
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#logo {
+		margin-left: 15px;
+		width: 80px;
+	}
+	#slide7 address {
+		text-align: left !important;
+	}
+	#txt-bussiness {
+		font-size: 1.6em;
+		line-height: 1.7em;
+		white-space: nowrap;
+	}
+	.mb15 {
+		margin-bottom: 15px
+	}
+	.list-services {
+		padding-left: 15px;
+		padding-right: 15px
+	}
 }

@@ -228,7 +228,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 								</div>
 								<div class="form-group">
 									<div class="row">
-										<div class="col-sm-8">
+										<div class="col-sm-8 mb15">
 											<input type="mail" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico" required>
 										</div>
 										<div class="col-sm-4">
@@ -238,12 +238,12 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 								</div>
 								<div class="form-group">
 									<div class="row">
-										<div class="col-xs-7 col-sm-4">
+										<div class="col-xs-6 col-sm-4 mb15">
 											<select class="form-control" name="pais" id="pais">
 												<?php echo $optionsCountry ?>
 											</select>
 										</div>
-										<div class="col-xs-5 col-sm-4">
+										<div class="col-xs-6 col-sm-4">
 											<select name="distrito" id="distrito" class="form-control">
 												<?php echo $options ?>
 											</select>
@@ -278,12 +278,12 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 								</div>
 								<div class="form-group">
 									<div class="row">
-										<div class="col-sm-4">
+										<div class="col-sm-4 mb15">
 											<select class="form-control" name="pais_deliver" id="pais_deliver">
 												<?php echo $optionsCountry ?>
 											</select>
 										</div>
-										<div class="col-sm-4">
+										<div class="col-sm-4 mb15">
 											<select name="distrito_deliver" id="distrito_deliver" class="form-control"><?php echo $options ?></select>
 											<input type="text" class="form-control hidden" name="distrito_deliver" disabled id="text-distrito-deliver" placeholder="Ciudad / Distrito">
 										</div>
@@ -356,7 +356,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 			<div class="h56 bg-gray-light"></div>
 			<div class="content grid_12 bg-white">
 				<div class="middle-panel">
-					<p>Encuentra una Oportunidad de Negocio con Nosotros</p>
+					<p id="txt-bussiness"><span class="hidden-xs hidden-sm">Encuentra una </span>Oportunidad de Negocio<span class="hidden-xs"> con Nosotros</span></p>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
@@ -401,12 +401,12 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-sm-4">
+									<div class="col-sm-4 mb15">
 										<select class="form-control" name="pais">
 											<?php echo $optionsCountry ?>
 										</select>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-sm-4 mb15">
 										<input type="text" class="form-control" name="estado" placeholder="Estado">
 									</div>
 									<div class="col-sm-4">
@@ -435,15 +435,13 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
             	<img src="img/somos.jpg" class="img-responsive" alt="Imagen de quienes somos">
 				<div class="mt60">
           			<ul class="list-services">
-          				<li><i></i>Nos caracterizamos por tener una filosofía que genera respuestas rápidas a sus consultas y  atendemos de inmediato los diversos servicios, debido a que entendemos el valor del tiempo para las organizaciones de hoy.</p></li>
-
-						<li><i></i>Usamos diversas herramientas tecnológicas, las cuales nos permiten generar un trato altamente personalizado con nuestros socios (clientes).  Somos conscientes de que el mundo de los negocios está en constante movimiento y el manejo ágil de información es de vital importancia, por eso hemos desarrollado un software que podrá mantenernos conectados las 24 horas del día.</p></li>
-
-						<li><i></i>Contamos con una diversa cartera de servicios que se acomoda a cada necesidad y también somos una empresa flexible en acomodarse en torno a nuevos retos.</p></li>
-						<li><i></i>Brindamos asesoramiento y seguimiento de inicio a fin en cada uno de nuestros procesos, nos apasiona nuestro trabajo y lo reflejan cada día nuestros colaboradores.</p></li>
-          				<li><i></i><strong>Visión:</strong> Ser el operador logísitico con mayor presencia operativa y comercial a nivel nacional.</li>
-          				<li><i></i><strong>Misión:</strong> Brindar una solución eficiente y eficaz a las diversas necesidades de nuestros clientes, convirtiéndonos en parte fundamental en la cadena logísitica, y ofreciendo en todo momento la búsqueda de la mejora continua para todos los agentes implicados.</li>
-          				<li><i></i><strong>Valores:</strong> Disponibilidad inmediata, búsqueda de la mejora contínua, eficiencia en los procesos.<br><br></li>
+          				<li>Nos caracterizamos por tener una filosofía que genera respuestas rápidas a sus consultas y atendemos de inmediato los diversos servicios, debido a que entendemos el valor del tiempo para las organizaciones de hoy.</li>
+						<li>Usamos diversas herramientas tecnológicas, las cuales nos permiten generar un trato altamente personalizado con nuestros socios (clientes).  Somos conscientes de que el mundo de los negocios está en constante movimiento y el manejo ágil de información es de vital importancia, por eso hemos desarrollado un software que podrá mantenernos conectados las 24 horas del día.</li>
+						<li>Contamos con una diversa cartera de servicios que se acomoda a cada necesidad y también somos una empresa flexible en acomodarse en torno a nuevos retos.</li>
+						<li>Brindamos asesoramiento y seguimiento de inicio a fin en cada uno de nuestros procesos, nos apasiona nuestro trabajo y lo reflejan cada día nuestros colaboradores.</li>
+          				<li><strong>Visión:</strong> Ser el operador logísitico con mayor presencia operativa y comercial a nivel nacional.</li>
+          				<li><strong>Misión:</strong> Brindar una solución eficiente y eficaz a las diversas necesidades de nuestros clientes, convirtiéndonos en parte fundamental en la cadena logísitica, y ofreciendo en todo momento la búsqueda de la mejora continua para todos los agentes implicados.</li>
+          				<li><strong>Valores:</strong> Disponibilidad inmediata, búsqueda de la mejora contínua, eficiencia en los procesos.<br><br></li>
 					</ul>
 				</div>
             	<ul class="list-inline social-buttons">
@@ -688,28 +686,28 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 				<div class="modal-body">
 					<strong>Recomendaciones</strong>
 					<ul>
-						<li>Es responsabilidad del remitente declarar el 100% del valor declarado de su envío, esto permitirá que en caso 
+						<li>Es responsabilidad del remitente declarar el 100% del valor declarado de su envío, esto permitirá que en caso
 
-de un siniestro se le indemnice de acuerdo con su valor, si es el caso, evitando pérdidas financieras a su 
+de un siniestro se le indemnice de acuerdo con su valor, si es el caso, evitando pérdidas financieras a su
 
 empresa.</li>
-						<li>Si el envío comprende equipos tecnológicos o importados, es recomendable adjuntar los documentos de 
+						<li>Si el envío comprende equipos tecnológicos o importados, es recomendable adjuntar los documentos de
 
-transporte (Guía de Remisión, Boleta o Factura, etc.) para presentarlos a las autoridades en caso de alguna 
+transporte (Guía de Remisión, Boleta o Factura, etc.) para presentarlos a las autoridades en caso de alguna
 
 inspección, a fin de evitar sanciones.</li>
-						<li>El remitente debe considerar referencias en cuanto a la dirección descrita en la guía o declaración jurada de 
+						<li>El remitente debe considerar referencias en cuanto a la dirección descrita en la guía o declaración jurada de
 
-su envío. Además, ésta debe ser llenada con letra legible, de preferencia, letra imprenta para facilitar la lectura 
+su envío. Además, ésta debe ser llenada con letra legible, de preferencia, letra imprenta para facilitar la lectura
 
 al Colaborador.</li>
 					</ul>
 					<strong>Deberes del Remitente</strong>
 					<ul>
-						<li>Lima Courier brinda a sus clientes el servicio de embolsado seguro para los envíos que comprendan artículos 
+						<li>Lima Courier brinda a sus clientes el servicio de embolsado seguro para los envíos que comprendan artículos
 
 de valor.</li>
-						<li>Para los casos de paquetería, el cliente debe embalar y rotular debidamente su envío, sobre todo, cuando se 
+						<li>Para los casos de paquetería, el cliente debe embalar y rotular debidamente su envío, sobre todo, cuando se
 
 trate de material frágil.</li>
 						<li>Precisar en la guía o declaración jurada el contenido real de las unidades enviadas. Lima Courier recibe las
@@ -738,29 +736,29 @@ unidades para entregarlas en las mismas condiciones al destinatario.</li>
 						<li>En caso de siniestro, el reclamo deberá realizarse en un máximo de tres (03) días después de informado el
 
 suceso, para ello, se deberán adjuntar los documentos solicitados y seguir el proceso que se indique.</li>
-						<li>En ningún caso Lima Courier Corporación SAC asume o asumiría pagos por impuestos, sobrecostos u 
+						<li>En ningún caso Lima Courier Corporación SAC asume o asumiría pagos por impuestos, sobrecostos u
 
-obligaciones similares propias de un envío internacional, interprovincial o local ya sea solicitado por Aduanas 
+obligaciones similares propias de un envío internacional, interprovincial o local ya sea solicitado por Aduanas
 
 a nivel nacional o internacional, SUNAT, o agente regulador que competa o no al tipo de envío realizado.</li>
-						<li>Lima Courier Corporación SAC ofrece, solamente, el servicio de “traslado o transporte” de documentos, 
+						<li>Lima Courier Corporación SAC ofrece, solamente, el servicio de “traslado o transporte” de documentos,
 
-sobres, paquetes y carga y por lo tanto no asume obligaciones económicas con terceros, siendo estas 
+sobres, paquetes y carga y por lo tanto no asume obligaciones económicas con terceros, siendo estas
 
-obligaciones propias del solicitante ya sea con una entidad como superintendencias o servicio nacional de 
+obligaciones propias del solicitante ya sea con una entidad como superintendencias o servicio nacional de
 
 aduanas en el país de destino o agentes reguladores.</li>
 						<li>Lima Courier Corporación SAC no realiza reembolsos por envíos que han sido enrutados o que están
 
-cercanos a su lugar de destino y tampoco asume obligación alguna si es que hay imprevistos como cambio de 
+cercanos a su lugar de destino y tampoco asume obligación alguna si es que hay imprevistos como cambio de
 
-domicilio del destinatario, no ubicación en general del destinatario, mala consignación de la dirección o datos 
+domicilio del destinatario, no ubicación en general del destinatario, mala consignación de la dirección o datos
 
-del remitente o destinatario siendo esto obligación directa del solicitante del servicio. Tampoco es de 
+del remitente o destinatario siendo esto obligación directa del solicitante del servicio. Tampoco es de
 
-competencia de Lima Courier Corporación asumir costos o gastos por eventos fortuitos como pérdida de la 
+competencia de Lima Courier Corporación asumir costos o gastos por eventos fortuitos como pérdida de la
 
-mercancía por mala praxis de terceros, o por eventos fortuitos de la naturaleza (huaicos, tormentas, 
+mercancía por mala praxis de terceros, o por eventos fortuitos de la naturaleza (huaicos, tormentas,
 
 terremotos, incendios y similares).</li>
 
@@ -772,21 +770,21 @@ terremotos, incendios y similares).</li>
 					</ul>
 					<strong>Declaración de Protección de Datos</strong>
 					<ul>
-						<li>Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta 
+						<li>Lima Courier asume la responsabilidad solidariamente y como propia, de guardar absoluta reserva y estricta
 
-confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y 
+confidencialidad sobre toda la información que recibe de sus usuarios, incluyendo los nombres, direcciones y
 
-demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser 
+demás datos de los clientes que componen la base de datos. Dicha información no podrá ser difundida ni ser
 
-de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni 
+de conocimiento de ningún tercero, por cualquier causa o motivo. Ningún tercero debe tener acceso ni
 
-conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo 
+conocimiento de la información, de manera parcial o total, para lo cual, Lima Courier cuenta con un óptimo
 
-sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para 
+sistema de seguridad que protege la información con la misma seguridad, cuidado y diligencia que utiliza para
 
 proteger su propia información.
 					</li>
-					<li>Los datos que solicitamos a nuestros usuarios son con el fin de mejorar nuestro Servicio y hacer que todo 
+					<li>Los datos que solicitamos a nuestros usuarios son con el fin de mejorar nuestro Servicio y hacer que todo
 
 proceso sea más sencillo para ellos.</li>
 				</div>
