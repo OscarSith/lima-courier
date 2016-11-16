@@ -218,6 +218,15 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 					<div>
 						<img src="img/sub-sliders/logo.png" alt="" class="center-block">
 					</div>
+					<div>
+						<img src="img/sub-sliders/logotipo_color.png" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/sub-sliders/servicio_lidercontab.png" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/sub-sliders/Sika-Product-Logo.jpg" alt="" class="center-block">
+					</div>
 				</div>
 				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0; font-size: 0.99em; ">
 					<small>Lima Courier es un servicio de entrega puerta a puerta, seguro, rápido y confiable, con un cubrimiento en todos los distritos de Lima Metropolitana, además de todas las provincias del Perú y con cubrimiento total a nivel internacional, garantizando un tiempo record en cada entrega.<br>

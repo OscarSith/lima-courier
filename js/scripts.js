@@ -170,5 +170,5 @@ $('#pais_deliver, #pais').on('change', function(e) {
 
 $('#sub-slider-home').slick({
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 1
 });
