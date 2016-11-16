@@ -310,6 +310,9 @@ address {
 	border: 2px solid #d1d1d1;
 	padding: 10px 15px;
 }
+#sub-slider-home {
+	margin-top: 45px;
+}
 
 @media (min-width: 1200px) {
 	.container {

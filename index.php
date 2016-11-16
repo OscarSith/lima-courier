@@ -110,7 +110,10 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/pikaday.css">
+	<link rel="stylesheet" href="css/pikaday.css">
 	<link rel="stylesheet" type="text/css" href="css/selectize.default.css">
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<link rel="stylesheet" href="js/slick/slick-theme.css">
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
@@ -197,6 +200,23 @@ $options = '<option value="">- Seleccione Ciudad -</option>
 						<div class="item">
 							<img src="img/slider/banner_slider-11.jpg" alt="...">
 						</div>
+					</div>
+				</div>
+				<div id="sub-slider-home">
+					<div>
+						<img src="img/sub-sliders/2e639e8.png" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/sub-sliders/c34.jpg" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/sub-sliders/descarga.jpg" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/sub-sliders/descarga.png" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/sub-sliders/logo.png" alt="" class="center-block">
 					</div>
 				</div>
 				<div class="well mb0" style="padding-top: 25px;padding-bottom: 0; font-size: 0.99em; ">
@@ -810,6 +830,7 @@ proceso sea más sencillo para ellos.</li>
 	<script src="js/moment.min.js"></script>
 	<script src="js/pikaday.js"></script>
 	<script src="js/selectize.min.js"></script>
+	<script src="js/slick/slick.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

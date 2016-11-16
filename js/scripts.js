@@ -167,3 +167,8 @@ $('#pais_deliver, #pais').on('change', function(e) {
         $this.parent().next().children().first().removeClass('hidden').next().addClass('hidden').prop('disabled', true);
     }
 });
+
+$('#sub-slider-home').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3
+});
