@@ -547,7 +547,7 @@ Entendemos la urgencia que tienen las organizaciones en conectar procesos y ser 
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
 	                            <i class="fa fa-mobile-phone" style="font-size:1.9em"></i>
-	                            9529-47702 | 9881-63388
+	                            9529-47702 | 953287040
 	                        </li>
 	                        <li>
 	                            <i class="fa-li fa fa-check-square text-muted"></i>
